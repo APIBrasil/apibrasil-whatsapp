@@ -1,0 +1,312 @@
+/*
+Template Name: Admin Template
+Author: Niravjoshi / Wrappixel
+File: scss
+*/
+
+
+
+// Tooltip for the chartist chart charts
+.chartist-tooltip {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+    background: $info;
+    color: $white;
+    ext-align: center;
+    pointer-events: none;
+    z-index: 1;
+    -webkit-transition: opacity .2s linear;
+    -moz-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
+}
+
+.chartist-tooltip:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    border-top-color: $info;
+}
+
+.chartist-tooltip.tooltip-show {
+    opacity: 1;
+}
+
+
+
+// Custom select
+.custom-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    background-size: auto;
+}
+
+
+//material-icon
+.m-icon {
+    width: 33%;
+    display: inline-block;
+}
+
+@include media-breakpoint-down(sm) {
+    .m-icon {
+        width: 100%;
+    }
+
+}
+
+//font-awesome icon
+.m-icon {
+    cursor: pointer;
+    padding: 13px 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+        background-color: $gray-100;
+    }
+}
+
+.error-box {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: url(../../assets/images/background/error-bg.jpg) no-repeat center center $white !important ;
+    .error-body {
+        padding-top: 5%;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+    .error-title {
+        font-size: 210px;
+        font-weight: 900;
+        color: #2c2b2e;
+        line-height: 210px;
+    }
+    .error-subtitle {
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+// mobile view error box
+@include media-breakpoint-down(xs) {
+    .error-box {
+        .error-body {
+            padding-top: 5%!important;
+            .error-title {
+                font-size: 100px;
+                font-weight: 600;
+                line-height: 100px;
+            }
+        }
+    }
+}
+
+.campaign{
+    position: relative;
+    height: 250px;
+    .ct-series-a .ct-area { 
+        fill-opacity:0.2;
+        fill: url(#gradient); 
+    }
+    .ct-series-a .ct-line, .ct-series-a .ct-point{
+        stroke: $cyan;   
+        stroke-width:2px;  
+    }
+    .ct-series-b .ct-area{
+        fill: $primary;
+        fill-opacity:0.1; 
+    }
+    .ct-series-b .ct-line, .ct-series-b .ct-point {
+        stroke: $primary;
+        stroke-width:2px; 
+    }
+    .ct-series-a .ct-point, .ct-series-b .ct-point{
+        stroke-width:6px;
+    } 
+}
+
+// table
+.stylish-table {
+    thead {
+        th {
+            font-size: 16px;
+            font-weight: 400;
+            color: #90a4ae;
+        }
+    }
+    tbody {
+        tr {
+            border-left: 4px solid transparent;
+            &:hover {
+                border-left: 4px solid $blue;
+            }
+            &.active {
+                border-left: 4px solid $blue;
+            }
+            td {
+                h6 {
+                    font-weight: 500;
+                    margin-bottom: 0px;
+                    white-space: nowrap;
+                }
+                small {
+                    font-size: 12.8px;
+                    line-height: 12px;
+                    white-space: nowrap;
+                }
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        
+    }
+}
+
+// blogs
+.list-inline {
+    font-weight: 300;
+}
+.font-normal {
+    line-height: 30px;
+}
+
+// profile
+.profile-card {
+    a {
+        font-size: 16px;
+        &:hover {
+            i{
+                color: $blue;
+            }
+            .font-normal {
+                color: $blue;
+            }
+        }
+    }
+}
+
+// form 
+.form-material {
+    .form-group {
+        overflow: hidden;
+        label {
+            font-size: 16px;
+            color: #54667a;
+        }
+        .form-control, .form-select {
+            background-image: linear-gradient(#009efb, #009efb), linear-gradient(#d9d9d9, #d9d9d9);
+            border: 0 none;
+            border-radius: 0;
+            box-shadow: none;
+            float: none;
+            background-color: transparent;
+            background-position: center bottom, center calc(100% - 1px);
+            background-repeat: no-repeat;
+            background-size: 0 2px, 100% 1px;
+            padding: 0;
+            transition: background 0s ease-out 0s;
+            &:focus {
+                background-size: 100% 2px, 100% 1px;
+                outline: 0 none;
+                transition-duration: 0.3s;
+                background-image: linear-gradient(#009efb, #009efb), linear-gradient(#d9d9d9, #d9d9d9);
+                border: 0 none;
+                border-radius: 0;
+                box-shadow: none;
+                float: none;
+            }
+        }
+    }
+}
+
+// fontawesome icon
+.icon-list-demo {
+    .col-sm-6 {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 60px;
+        white-space: nowrap;
+        background-color: transparent;
+        color: #54667a;
+        &.f-icon {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        i {
+            font-size: 18px;
+            margin: 0 15px 0 10px;
+            width: auto;
+            transition: all .3s ease 0s;
+        }
+        &:hover {
+            background-color: #ebf3f5;
+        }
+    }
+}
+
+// table
+.user-table {
+    color: #54667a;
+    thead {
+        th {
+            font-weight: 500;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// google maps
+.gmaps {
+    height: 300px;
+    background: #f2f7f8;
+    border-radius: 3px;
+}
+
+// flot-chart
+.flot-chart {
+    display: block;
+    height: 400px;
+    .flot-chart-content {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// button styling
+.btn {
+    border-radius: 4px!important;
+    &:hover {
+        opacity: 0.7!important;
+    }
+}

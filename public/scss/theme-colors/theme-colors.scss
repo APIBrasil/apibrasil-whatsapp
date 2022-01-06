@@ -1,0 +1,65 @@
+// Theme colors
+#main-wrapper{
+    &[data-layout="vertical"], &[data-layout="horizontal"]{
+        /*This is for the logo bg*/
+        .topbar .top-navbar .navbar-header{
+            &[data-logobg="skin6"]{
+                background: $skin6;
+            }
+        }
+        // .topbar .navbar-collapse, .topbar{
+        //     &[data-navbarbg="skin6"]{
+        //         background: $skin6;
+        //     }
+        // }
+        /*This is for the sidebar bg*/
+        .left-sidebar{
+            &[data-sidebarbg="skin6"]{
+                background: $skin6;
+                .sidebar-nav {
+                    ul {
+                        background: $skin6;
+                       .sidebar-item {
+                           .sidebar-link {
+                               color: $sidebar-text-dark;
+                               i{
+                                   color: $sidebar-icons-dark;
+                               }
+                               &.active {
+                                    background: $sidebar-alt;
+                                    color: $themecolor-dark;
+                                    font-weight: 400;
+                                    border-left: 3px solid $themecolor-dark;
+                                    i{
+                                        color: $themecolor-dark;
+                                    }
+                                }
+                                &:hover {
+                                    color: $themecolor-dark;
+                                    i{
+                                        color: $themecolor-dark;
+                                    }
+                                }
+                           }
+                        }
+                        .nav-small-cap {
+                            color: $sidebar-text-dark;
+                            opacity: 0.7;
+                        }
+                    }
+                    .has-arrow {
+                        &::after {
+                           border-color: $sidebar-text-dark; 
+                        }
+                    }
+                    .user-content, .user-name, .user-email{
+                        color:$theme-dark;
+                    }
+                }
+                .create-btn {
+                    background: $cyan; 
+                }
+            }
+        }
+    }
+}
