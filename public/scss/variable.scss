@@ -47,7 +47,7 @@ $sidebar-icons-dark: #a6b7bf;
 
 $sidebar-width-full:240px;
 $sidebar-width-iconbar:180px;
-$sidebar-width-mini:65px;   
+$sidebar-width-mini:65px;
 
 
 
@@ -140,7 +140,7 @@ $black: #000 !default;
 
 $blue: #009efb !default;
 $indigo: #6610f2 !default;
-$purple: #7460ee !default;
+$purple: #4bc95a !default;
 $pink: #e83e8c !default;
 $red: #f62d51 !default;
 $orange: #fb8c00 !default;
@@ -148,7 +148,7 @@ $yellow: #ffbc34 !default;
 $green: #55ce63 !default;
 $teal: #20c997 !default;
 $cyan: #4fc3f7 !default;
-$primary: #7460ee !default;
+$primary: #4bc95a !default;
 $text-muted: $gray-500 !default;
 
 $colors: ( blue: $blue,
@@ -219,7 +219,7 @@ $font-family-sans-serif: 'Rubik',
 sans-serif !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
-$font-weight-medium: 600 !default; 
+$font-weight-medium: 600 !default;
 $font-weight-bold: 800 !default;
 
 $h1-font-size: 36px !default;
@@ -289,7 +289,7 @@ $custom-control-indicator-active-bg: rgba(0,
 0,
 0,
 35%) !default;
-$custom-select-indicator: url(../../assets/images/custom-select.png)!default;  
+$custom-select-indicator: url(../../assets/images/custom-select.png)!default;
 $input-btn-focus-box-shadow: transparent !default;
 $custom-select-focus-box-shadow: transparent !default;
 $custom-select-indicator: str-replace(url(""),

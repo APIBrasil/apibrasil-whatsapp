@@ -1,0 +1,158 @@
+/*======================================
+    Hero Area CSS
+========================================*/
+.hero-area {
+    position: relative;
+    background-color: $black;
+    padding: 280px 0 260px 0;
+    z-index: 0;
+    background-color: $theme-color;
+    background-image: url('https://via.placeholder.com/1920x1080');
+    background-size: cover;
+    background-position: center;
+
+    .hero-shape {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        z-index: -1;
+    }
+
+    @media #{$md} {
+        padding: 130px 0 180px 0;
+    }
+
+    @media #{$xs} {
+        padding: 110px 0 150px 0;
+    }
+
+    .hero-content {
+        border-radius: 0;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 0px 150px;
+
+        @media #{$md} {
+            padding: 0px 140px;
+        }
+
+        @media #{$xs} {
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        h4 {
+            color: $white;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.178);
+            padding: 12px 16px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 52px;
+            color: $white;
+            text-transform: capitalize;
+
+            @media #{$md} {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 38px;
+            }
+
+            @media #{$xs} {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #fff;
+            margin-top: 20px;
+
+            @media #{$md} {
+                font-size: 15px;
+            }
+
+            @media #{$xs} {
+                margin-top: 15px;
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
+
+        h5 {
+            font-size: 15px;
+            font-weight: 600;
+            color: $white;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 50px;
+
+            @media #{$md} {
+                margin-top: 30px !important;
+                width: 100%;
+            }
+
+            @media #{$xs} {
+                margin-top: 30px;
+                width: 100%;
+            }
+
+            a {
+                height: 45px;
+                width: 45px;
+                line-height: 45px;
+                text-align: center;
+                display: inline-block;
+                background-color: $white;
+                color: $theme-color;
+                border-radius: 50%;
+                font-size: 22px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.07);
+                }
+            }
+
+            @media #{$xs} {
+                .btn {
+                    width: 60%;
+                    margin: 0;
+                    margin-bottom: 8px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-image {
+        text-align: right;
+        position: relative;
+        z-index: 0;
+
+        @media #{$md,$xs} {
+            display: none;
+        }
+
+        .main-image {
+            width: 90%;
+        }
+    }
+
+}

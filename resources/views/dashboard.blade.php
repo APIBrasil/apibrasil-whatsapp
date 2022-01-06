@@ -45,83 +45,6 @@
 
             <div class="row">
 
-                <div class="col-sm-3">
-                    <a href="/painel/message">
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Mensagens aguardando</h4>
-                                <div class="text-end">
-                                    <h2 class="font-light mb-0"><i class="fas fa-comment-slash text-danger"></i> {{ $aguardando->count() }} </h2>
-                                    <span class="text-muted">Total de mensagens</span>
-                                </div>
-                                <span class="text-success">{{ $aguardando->count() }}</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $aguardando->count() ?>%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-3">
-                    <a href="/painel/messages">
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Mensagens enviadas</h4>
-                                <div class="text-end">
-                                    <h2 class="font-light mb-0"><i class="fas fa-arrow-up text-success"></i> {{ $enviado->count() }} </h2>
-                                    <span class="text-muted">Total de mensagens</span>
-                                </div>
-                                <span class="text-success">{{ $enviado->count() }}</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $enviado->count() - $msgs ?? 0?>%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="col-sm-3">
-                    <a href="/painel/groups">
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Grupos sincronizados</h4>
-                                <div class="text-end">
-                                    <h2 class="font-light mb-0"><i class="fas fa-object-group"></i> {{ $groups->count() }}</h2>
-                                    <span class="text-muted">Total de grupos</span>
-                                </div>
-                                <span class="text-info">{{ $groups->count()  }}</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: <?php echo $groups->count() ?>%; height: 6px;" aria-valuenow="{{ $groups->count() }}" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="col-sm-3">
-                    <a href="/painel/contacts">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Contatos sincronizados</h4>
-                                <div class="text-end">
-                                    <h2 class="font-light mb-0"><i class="fas fa-users text-info"></i> {{ $contacts->count() }}</h2>
-                                    <span class="text-muted">Total de contatos</span>
-                                </div>
-                                <span class="text-info">{{ $contacts->count() }}</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: <?php echo $contacts->count() ?>%; height: 6px;" aria-valuenow="{{ $contacts->count() }}" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -154,14 +77,7 @@
                                     Movimentação da plataforma
                                 </h4>
                             </div>
-                            <!-- <div class="col-md-2 ms-auto">
-                                <select class="form-select shadow-none col-md-2 ml-auto">
-                                    <option selected="">January</option>
-                                    <option value="1">February</option>
-                                    <option value="2">March</option>
-                                    <option value="3">April</option>
-                                </select>
-                            </div> -->
+
                             <div class="table-responsive mt-5">
                                 <table class="table stylish-table no-wrap">
                                     <thead>

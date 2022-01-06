@@ -1,0 +1,174 @@
+/*======================================
+    Testimonial CSS
+========================================*/
+.testimonials {
+    padding-bottom: 150px;
+    background-color: $black;
+
+    @media #{$md} {
+        padding-bottom: 110px;
+    }
+
+    @media #{$xs} {
+        padding-bottom: 100px;
+    }
+
+    .shape {
+        position: absolute;
+        right: -76px;
+        bottom: -74px;
+        height: 150px;
+        width: 150px;
+        z-index: 5;
+        opacity: 0.6;
+        border-radius: 50%;
+
+        @media #{$md} {
+            height: 120px;
+            width: 120px;
+            right: -60px;
+            bottom: -60px;
+        }
+
+        @media #{$xs} {
+            height: 100px;
+            width: 100px;
+            right: -50px;
+            bottom: -50px;
+        }
+    }
+
+    .section-title {
+        h2 {
+            color: $white;
+        }
+
+        h3 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+        }
+    }
+
+
+    .testimonial-slider {
+        margin: 0;
+    }
+
+    .tns-nav {
+        text-align: center;
+        position: absolute;
+        bottom: 80px;
+        transform: translateX(-50%);
+        width: 100%;
+        left: 50%;
+        z-index: 9;
+
+        @media #{$md} {
+            bottom: 60px;
+        }
+
+        @media #{$xs} {
+            bottom: 50px;
+        }
+
+        button {
+            height: 12px;
+            width: 12px;
+            background-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            border: none;
+            margin: 0px 5px;
+            transition: all 0.4s ease;
+            border: 1px solid #fff;
+
+            &:hover {
+                background: $white;
+                border-color: transparent;
+            }
+
+            &.tns-nav-active {
+                background: $white;
+                border-color: transparent;
+            }
+        }
+    }
+
+    .single-testimonial {
+        background: $white;
+        padding: 50px 40px;
+        margin: 20px 0;
+        transition: all 0.4s ease;
+        position: relative;
+        border-radius: 8px;
+        border-bottom: 4px solid transparent;
+
+        &:hover {
+            border-bottom-color: $theme-color;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.137);
+            transform: translateY(-5px);
+        }
+
+        .quote-icon {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+
+            i {
+                font-size: 50px;
+                color: #cccccc3b;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 13px #0000001a;
+
+            .author {
+                img {
+                    border-color: $theme-color;
+                }
+            }
+        }
+
+        .author {
+            position: relative;
+            padding-left: 90px;
+            min-height: 70px;
+            margin-bottom: 25px;
+            padding-top: 10px;
+
+            img {
+                height: 70px;
+                width: 70px;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: all 0.4s ease;
+            }
+
+            .name {
+                font-size: 16px;
+                font-weight: 600;
+                color: $black;
+
+                .deg {
+                    display: block;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #888;
+                }
+            }
+        }
+
+        .text {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

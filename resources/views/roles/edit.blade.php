@@ -33,18 +33,31 @@
                 <form method="POST" action="{{ route('roles.update', $role->id) }}">
                     @method('patch')
                     @csrf
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input value="{{ $role->name }}" type="text" class="form-control" name="name" placeholder="Name" required>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome plano</label>
+                                <input value="{{ $role->name }}" type="text" class="form-control" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="qt_devices" class="form-label">Quantidade devices permitidos</label>
+                                <input value="{{ $role->qt_devices }}" type="text" class="form-control" name="qt_devices" placeholder="Quantidade devices permitidos" required>
+                            </div>
+                        </div>
                     </div>
 
-                    <label for="permissions" class="form-label">Assign Permissions</label>
+                    <label for="permissions" class="form-label">Permissões disponíveis</label>
 
                     <table class="table table-striped">
                         <thead>
                             <th scope="col" width="1%"><input type="checkbox" name="all_permission"></th>
-                            <th scope="col" width="20%">Name</th>
-                            <th scope="col" width="1%">Guard</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Guard</th>
+                            <th scope="col">Criado em</th>
                         </thead>
 
                         @foreach($permissions as $permission)
@@ -56,6 +69,7 @@
                             </td>
                             <td>{{ $permission->name }}</td>
                             <td>{{ $permission->guard_name }}</td>
+                            <td>{{ $permission->created_at }}</td>
                         </tr>
                         @endforeach
                     </table>

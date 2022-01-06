@@ -1,0 +1,75 @@
+/*======================================
+	Services CSS
+========================================*/
+.services {
+    position: relative;
+    z-index: 0;
+    background-color: $gray;
+
+    .section-title {
+        margin-bottom: 50px;
+
+        @media #{$md} {
+            margin-bottom: 40px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    .single-service {
+        margin-top: 30px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0px 0px 30px rgba(81, 94, 125, 0.082);
+        padding: 35px 35px 40px 35px;
+        text-align: left;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        border-bottom: 4px solid transparent;
+        text-align: center;
+
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.103);
+            border-bottom-color: $theme-color;
+            transform: translateY(-5px);
+
+            .f-icon {
+                background-color: $theme-color;
+                color: $white;
+            }
+        }
+
+        .f-icon {
+            height: 75px;
+            width: 75px;
+            line-height: 75px;
+            border-radius: 50%;
+            background-color: #006aff18;
+            color: $theme-color;
+            font-size: 26px;
+            text-align: center;
+            display: inline-block;
+            transition: all 0.4s ease;
+        }
+
+        .text-title {
+            color: $black;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            transition: all 0.4s ease;
+        }
+
+        p {
+            line-height: 26px;
+            font-size: 15px;
+            transition: all 0.4s ease;
+        }
+    }
+}

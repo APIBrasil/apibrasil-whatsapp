@@ -10,16 +10,11 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use \Carbon\Carbon;
 use App\Models\User;
-use \ApiGratis\ApiGratis;
 
 class DashboardController extends Controller
 {
-    public function index(ApiGratis $apigratis, Request $request, $limit=5)
+    public function index(Request $request, $limit=5)
     {
-
-
-        dd($apigratis->handler());
-
 
         try{
 

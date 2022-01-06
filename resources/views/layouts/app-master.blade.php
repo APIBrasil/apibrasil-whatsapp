@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="envio de mensagens em massa, whatsapp api nao oficial, whatsapp api, php, webhook api whatsapp, api integracao whatsapp, integracao whatsapp">
-    <meta name="description" content="DivulgaWhatsApp, é um provedor de envio de mensagens por whatsapp via API ou painel, agendamento de envios e muito mais...">
+    <meta name="description" content="APIBrasil, é um provedor de envio de mensagens por whatsapp via API ou painel, agendamento de envios e muito mais...">
     <meta name="robots" content="noindex,nofollow">
-    <title>Painel de Controle - DivulgaWhatsApp</title>
+    <title>Painel de Controle - APIBrasil</title>
     <link rel="canonical" href="" />
 
     <link href="{!! url('assets/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">

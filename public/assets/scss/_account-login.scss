@@ -1,0 +1,288 @@
+/*======================================
+	Account Login CSS
+========================================*/
+.account-login {
+    background-color: $gray;
+
+    &.reset-pass {
+        .button {
+            margin-top: 20px;
+
+            @media #{$xs} {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .inner-content {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.075);
+    }
+
+    .login-form {
+        padding: 60px 70px;
+        background-color: $white;
+        border: none;
+
+        @media #{$md} {
+            padding: 50px;
+        }
+
+        @media #{$xs} {
+            padding: 40px 35px;
+        }
+
+        .card-body {
+            padding: 0;
+        }
+
+        .title {
+            margin-bottom: 45px;
+            text-align: center;
+
+            @media #{$xs} {
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-size: 30px;
+                font-weight: 700;
+                color: $black;
+                margin-bottom: 8px;
+
+                @media #{$xs} {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .input-head {}
+    }
+
+    .bottom-content {
+        margin-top: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        position: relative;
+
+        @media #{$xs} {
+            margin-bottom: 12px;
+        }
+
+        label {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
+
+        .form-control {
+            padding: 0 18px;
+            transition: all 0.4s ease;
+            background-color: #F4F5FB;
+            color: #505050;
+            font-size: 15px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 52px;
+            border-radius: 4px !important;
+            overflow: hidden;
+            width: 100%;
+            padding-left: 55px;
+            border: 1px solid #e4e6f3;
+
+            &:focus {
+                border-color: $theme-color;
+                box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.233);
+            }
+        }
+    }
+
+    .form-check {
+        a {
+            color: $theme-color;
+        }
+
+        .form-check-input {
+            margin-top: 3px;
+        }
+    }
+
+    .lost-pass {
+        color: #888;
+
+        &:hover {
+            color: $theme-color;
+        }
+    }
+
+    .button {
+        margin-top: 40px;
+        text-align: center;
+
+        @media #{$xs} {
+            display: block;
+            margin-top: 30px;
+
+            .btn {
+                margin-bottom: 13px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .btn {
+            padding: 14px 40px;
+            margin-right: 20px;
+            width: 100%;
+            border-radius: 4px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .or {
+        position: relative;
+        text-align: center;
+        margin: 30px 0;
+        z-index: 0;
+
+        span {
+            text-align: center;
+            font-size: 16px;
+            background-color: $white;
+            padding: 5px 12px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 50%;
+            margin-top: -1px;
+            background-color: #e8e8e8;
+            height: 1px;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+    .alt-option {
+        margin-top: 30px;
+        text-align: center;
+
+        .option-button {
+            padding: 15px 25px;
+            border-radius: 4px;
+            display: inline-block;
+            text-align: center;
+            color: $white;
+            background-color: $theme-color;
+            margin-right: 10px;
+
+            @media #{$xs} {
+                margin: 0;
+                width: 100%;
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+            i {
+                display: inline-block;
+                margin-right: 5px;
+                font-size: 16px;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+
+            img {
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+            &.google {
+                background-color: #DB4437;
+
+                &:hover {
+                    background-color: #e94d3e;
+                }
+            }
+
+            &.facebook {
+                background-color: #4267B2;
+
+                &:hover {
+                    background-color: #3f6bc5;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.116);
+                transform: translateY(-5px);
+            }
+        }
+
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+
+        li {
+            font-weight: 500;
+
+            @media #{$xs} {
+                margin-top: 5px;
+            }
+
+            span {
+                color: $body-color;
+                display: inline-block;
+            }
+
+            display: inline-block;
+            margin-right: 15px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                color: $theme-color;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .create-account {
+        font-weight: 500;
+        color: $black;
+        text-align: center;
+        margin-top: 35px;
+        font-size: 14px;
+        display: block;
+
+        a {
+            color: $theme-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

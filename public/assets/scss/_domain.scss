@@ -1,0 +1,81 @@
+/*======================================
+    Domain CSS
+========================================*/
+
+.domain {
+    background-color: $white;
+
+    .text-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .thead-dark th {
+        background-color: $black;
+        border-color: $black;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 18px 15px;
+        vertical-align: middle;
+        color: $white;
+    }
+
+    .table {
+        @media #{$xs} {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+    }
+
+    tbody tr {
+        transition: all 0.3s ease;
+        border-color: #e1eeff;
+
+        &:hover {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.103);
+        }
+    }
+
+    td {
+        border-color: #e1eeff;
+        width: 25%;
+        vertical-align: middle;
+        padding: 18px 15px;
+        text-align: center;
+        color: #626675;
+        font-size: 15px;
+
+        a {
+            color: $black;
+
+            i {
+                display: inline-block;
+                margin-right: 5px;
+                font-size: 15px;
+            }
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    tbody span {
+        font-weight: 700;
+        color: $black;
+        font-size: 14px;
+    }
+
+    tbody svg {
+        width: 8px;
+        position: relative;
+        top: -2px;
+        left: -2px;
+    }
+
+    th {
+        border: 1px solid #dee2e6;
+        text-align: center;
+    }
+}

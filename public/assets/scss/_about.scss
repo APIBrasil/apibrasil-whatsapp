@@ -1,0 +1,166 @@
+/*======================================
+    About Area CSS
+========================================*/
+
+.about {
+    background: $black;
+    z-index: 0;
+    padding: 130px 0;
+
+    @media #{$md} {
+        padding: 80px 0;
+    }
+
+    @media #{$xs} {
+        padding: 70px 0;
+    }
+
+    &.about-page {
+        background-color: $white;
+
+        .content {
+
+            h2 {
+                color: $black;
+
+                span {
+                    color: $theme-color;
+                }
+            }
+
+            p {
+                color: $body-color
+            }
+
+            .button {
+
+                .btn {
+                    color: $white;
+                    background-color: $black;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        @media #{$laptop,$desktop} {
+            padding-right: 90px;
+        }
+
+        @media #{$md} {
+            margin-bottom: 50px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 42px;
+            color: $white;
+
+            @media #{$md} {
+                font-size: 26px;
+                line-height: 32px;
+            }
+
+            @media #{$xs} {
+                font-size: 22px;
+                line-height: 30px;
+            }
+
+            span {
+                color: $white;
+                font-size: 15px;
+                font-weight: 500;
+                display: block;
+                margin-bottom: 5px;
+
+                @media #{$xs} {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        p {
+            margin-top: 30px;
+            color: $white;
+
+            @media #{$xs} {
+                margin-top: 25px;
+            }
+        }
+
+        .button {
+            margin-top: 40px;
+
+            @media #{$xs} {
+                margin-bottom: 30px;
+            }
+
+            .btn {
+                color: $black;
+                background-color: $white;
+
+                &:hover {
+                    color: $white;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+
+    .image {
+        text-align: center;
+        position: relative;
+
+        img {
+            width: 100%;
+            border-radius: 7px;
+            z-index: 2;
+        }
+
+        .shape {
+            position: absolute;
+            right: -30px;
+            bottom: -30px;
+            height: 150px;
+            width: 150px;
+            z-index: 5;
+            opacity: 1;
+            z-index: -1;
+            border-radius: 0;
+        }
+
+        .play-thumb {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            .video {
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                text-align: center;
+                display: block;
+                border-radius: 50%;
+                background-color: $theme-color;
+                color: $white;
+                font-size: 18px;
+                padding-left: 3px;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

@@ -36,6 +36,7 @@ class RolesController extends Controller
         $this->validate($request, [
             'name' => 'required|unique:roles,name',
             'permission' => 'required',
+            'qt_devices' => 'required',
         ]);
 
         $role = Role::create(['name' => $request->get('name')]);
@@ -67,6 +68,7 @@ class RolesController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'permission' => 'required',
+            'qt_devices' => 'required',
         ]);
 
         $role->update($request->only('name'));

@@ -2,8 +2,7 @@
     <nav class="navbar top-navbar navbar-expand-md navbar-dark">
         <div class="navbar-header" data-logobg="skin6">
             <a class="navbar-brand" style="padding: 0 10px 0 20px !important;" href="{{ route('painel.index') }}">
-                <img src="https://media4.giphy.com/media/2mzQwAJ8DSWdWlzjgo/giphy.gif" style="width:20%">
-                <span style="padding-top:8px"> <strong class="text-success"> Divulga</strong>Whats<small>.com</small></span>
+                <span style="padding-top:8px"> <img src="/assets/images/logo-color.png" style="width:100%"> </span>
             </a>
             <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
         </div>
@@ -57,63 +56,6 @@
                     </a>
                 </li>
 
-                @can('mensagens-grupo')
-                <li class="sidebar-item">
-
-                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                        <i class="me-3 fas fa-object-group" aria-hidden="true"></i>
-                        <span class="hide-menu">
-                            Divulgação
-                        </span>
-                    </a>
-
-                    <ul aria-expanded="false" class="collapse first-level">
-
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('groups.index') }}" aria-expanded="false">
-                                <i class="me-3 fas fa-users" aria-hidden="true"></i>
-                                <span class="hide-menu">
-                                    Meus grupos
-                                </span>
-                            </a>
-                        </li>
-                        @can('mensagens-privado')
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('contacts.index') }}" aria-expanded="false">
-                                <i class="me-3 fas fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Meus contatos</span>
-                            </a>
-                        </li>
-                        @endcan
-                        <!-- <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('groups.index') }}" aria-expanded="false">
-                                <i class="me-3 fas fa-user-clock"></i>
-                                <span class="hide-menu">
-                                    Campanhas
-                                </span>
-                            </a>
-                        </li> -->
-                        <!-- <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('templates.index') }}" aria-expanded="false">
-                                <i class="me-3 far fa-object-ungroup"></i>
-                                <span class="hide-menu">
-                                    Layout mensagens
-                                </span>
-                            </a>
-                        </li> -->
-                    </ul>
-              </li>
-              @endcan
-
-                @can('tags-menu')
-                <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('tags.index') }}" aria-expanded="false">
-                        <i class="me-3 fas fa-tags" aria-hidden="true"></i>
-                        <span class="hide-menu">Tags marcação</span>
-                    </a>
-                </li>
-                @endcan
-
                 @can('usuarios-todos')
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('users.index') }}" aria-expanded="false">
@@ -154,16 +96,9 @@
                 </li>
  -->
                 <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://documenter.getpostman.com/view/11074732/UVR7LouU" target="_blank" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://documenter.getpostman.com/view/11074732/UVXdNJJp" target="_blank" aria-expanded="false">
                         <i class="me-3 fas fa-code" aria-hidden="true"></i>
                         <span class="hide-menu">Documentação API</span>
-                    </a>
-                </li>
-
-                <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="https://apigratis.com.br" target="_blank" aria-expanded="false">
-                        <i class="me-3 fas fa-network-wired" aria-hidden="true"></i>
-                        <span class="hide-menu">Patrocinador</span>
                     </a>
                 </li>
 

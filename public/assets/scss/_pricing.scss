@@ -1,0 +1,279 @@
+/*======================================
+	Pricing CSS
+========================================*/
+
+.pricing {
+    background-color: $gray;
+
+    .nav {
+        background-color: $white;
+        border: 1px solid #eee;
+        padding: 10px 13px !important;
+        border-radius: 40px !important;
+    }
+
+    .pricing-tabs {
+        margin-bottom: 40px !important;
+        text-align: center;
+
+        @media #{$xs} {
+            margin-bottom: 20px !important;
+        }
+    }
+
+    .nav-pills .nav-link {
+        color: $black;
+        border-radius: 30px !important;
+        padding: 10px 25px !important;
+
+        &:hover {
+            color: $theme-color;
+        }
+
+        &.active {
+            background: $theme-color;
+            color: $white;
+
+            .badge {
+                background-color: $white !important;
+                color: $theme-color !important;
+            }
+        }
+    }
+
+    .section-title {
+        margin-bottom: 60px;
+
+        @media #{$md} {
+            margin-bottom: 40px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .single-pricing {
+        padding: 45px 40px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.068);
+        background-color: $white;
+        transition: all 0.4s ease;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        margin-top: 30px;
+        z-index: 2;
+
+        .badge {
+            position: absolute;
+            left: -50px;
+            top: 22px;
+            background-color: $theme-color;
+            color: #fff;
+            padding: 6px 50px;
+            transform: rotate(-45deg);
+        }
+
+        .sahpe {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            right: -46px;
+            top: -46px;
+            z-index: -1;
+        }
+
+        .sahpe2 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: -46px;
+            bottom: -46px;
+            z-index: -1;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.116);
+            transform: translateY(-8px);
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 25px;
+        }
+
+        .start-at {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .price {
+            color: $theme-color;
+            font-size: 38px;
+            font-weight: 600;
+            font-family: DM Sans;
+
+            .sent {
+                font-size: 26px;
+            }
+
+            .duration {
+                font-size: 14px;
+                font-weight: 400;
+                color: $body-color;
+            }
+        }
+
+        .old-price {
+            color: $body-color;
+            text-decoration: line-through;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .save-price {
+            font-size: 15px;
+            font-weight: 500;
+            color: $black;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .button {
+            margin-top: 30px;
+
+            .btn {
+                background-color: $white;
+                border: 2px solid #eee;
+                color: $black;
+                padding: 12px 30px;
+                font-size: 14px;
+
+                &:hover {
+                    color: $white;
+                    background-color: $theme-color;
+                    border-color: transparent;
+                }
+            }
+        }
+
+        .item-list {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #eee;
+
+            li {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                color: $black;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Pricing Sryle 2 */
+.pricing-style2 {
+    .section-title {
+        margin-bottom: 50px;
+
+        @media #{$md} {
+            margin-bottom: 40px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    .single-pricing {
+        margin-top: 30px;
+        padding: 45px 40px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.068);
+        background-color: $white;
+        transition: all 0.4s ease;
+
+        &:hover {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.116);
+            transform: translateY(-8px);
+        }
+
+        .p-icon {
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            display: block;
+            border-radius: 7px;
+            background: #0069ff0f;
+            line-height: 90px;
+
+            i {
+                color: $theme-color;
+                font-size: 30px;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-top: 25px;
+        }
+
+        .des {
+            margin-bottom: 25px;
+        }
+
+        .start-at {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .price {
+            color: $black;
+            font-size: 38px;
+            font-weight: 600;
+            font-family: DM Sans;
+
+            .sent {
+                font-size: 26px;
+            }
+
+            .duration {
+                font-size: 14px;
+                font-weight: 400;
+                color: $body-color;
+            }
+        }
+
+        .button {
+            margin-top: 30px;
+
+            .btn {
+                background-color: $white;
+                border: 2px solid #eee;
+                color: $black;
+                padding: 12px 30px;
+                font-size: 14px;
+
+                &:hover {
+                    color: $white;
+                    background-color: $theme-color;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

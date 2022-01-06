@@ -1,0 +1,266 @@
+/*======================================
+    Why Choose Area CSS
+========================================*/
+
+.features {
+    background-color: $white;
+    padding-top: 120px;
+    position: relative;
+
+    .responsive-space {
+        @media #{$md,$xs} {
+            margin-top: 40px;
+        }
+    }
+
+    @media #{$md} {
+        padding-top: 80px;
+    }
+
+    @media #{$xs} {
+        padding-top: 60px;
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+
+        @media #{$md} {
+            margin-bottom: 40px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    &.style2 {
+        .single-feature {
+            padding: 40px 35px;
+
+            .list-icon {
+                position: relative;
+                display: inline-block;
+                top: 0;
+                left: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &.style3 {
+        .section-title {
+            margin: 0;
+        }
+
+        .single-item {
+            margin-top: 100px;
+
+            @media #{$md} {
+                margin-top: 80px;
+            }
+
+            @media #{$xs} {
+                margin-top: 50px;
+            }
+
+        }
+
+        .content {
+            padding: 0;
+
+            &.pl {
+                @media #{$laptop,$desktop} {
+                    padding-left: 60px;
+                }
+            }
+
+            &.pr {
+                @media #{$laptop,$desktop} {
+                    padding-right: 60px;
+                }
+            }
+
+            h5 {
+                color: $theme-color;
+                margin-bottom: 15px;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+                font-size: 30px;
+                line-height: 42px;
+                text-transform: capitalize;
+                position: relative;
+                font-weight: 700;
+
+                @media #{$md} {
+                    font-size: 26px;
+                    line-height: 35px;
+                }
+
+                @media #{$xs} {
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .image {
+            padding: 50px;
+            background-color: $gray;
+            border-radius: 8px;
+
+            @media #{$md} {
+                padding: 30px;
+            }
+
+            @media #{$xs} {
+                padding: 20px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        left: -76px;
+        bottom: -74px;
+        height: 150px;
+        width: 150px;
+        z-index: 5;
+        opacity: 0.6;
+        border-radius: 50%;
+
+        @media #{$md} {
+            height: 120px;
+            width: 120px;
+            left: -60px;
+            bottom: -60px;
+        }
+
+        @media #{$xs} {
+            height: 100px;
+            width: 100px;
+            left: -50px;
+            bottom: -50px;
+        }
+    }
+
+    .explore-all {
+        margin-top: 80px;
+
+        @media #{$md} {
+            margin-top: 60px;
+        }
+
+        @media #{$xs} {
+            margin-top: 40px;
+        }
+    }
+
+
+    .content {
+        @media #{$laptop,$desktop} {
+            padding-right: 90px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 45px;
+            color: $black;
+            margin-bottom: 30px;
+
+            span {
+                color: $theme-color;
+                font-size: 15px;
+                font-weight: 500;
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .button {
+            margin-top: 40px;
+        }
+    }
+
+    .single-feature {
+        margin-top: 30px;
+        padding: 50px 40px;
+        padding-right: 60px;
+        border-radius: 8px;
+        text-align: left;
+        background-color: $white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        padding-left: 130px;
+        border: 1px solid #eeeeee80;
+
+        @media #{$md,$xs} {
+            padding: 40px 35px;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.096);
+            transform: translateY(-8px);
+        }
+
+        .list-icon {
+            height: 65px;
+            width: 65px;
+            text-align: center;
+            line-height: 65px;
+            display: inline-block;
+            background-color: #006aff11;
+            color: $theme-color;
+            font-size: 26px;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            position: absolute;
+            left: 40px;
+            top: 50px;
+
+            @media #{$md,$xs} {
+                position: relative;
+                display: inline-block;
+                top: 0;
+                left: 0;
+                margin-bottom: 25px;
+            }
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            transition: all 0.4s ease;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+    }
+}
