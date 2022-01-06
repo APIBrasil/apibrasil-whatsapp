@@ -18,6 +18,8 @@ class AddExtrasSessionsTable extends Migration
             $table->timestamp('last_connected')->nullable();
             $table->timestamp('last_disconnected')->nullable();
 
+            $table->string('server_whatsapp')->nullable();
+
             $table->string('connected')->nullable();
             $table->string('locales')->nullable();
             $table->string('number')->nullable();

@@ -21,14 +21,9 @@
                 </div>
             </div>
             <div class="col-md-6 col-4 align-self-center">
-                @if( count($sessions) == 0)
+                @if( count($sessions) >= Auth::user()->roles()->first()->qt_devices)
                 <div class="text-end upgrade-btn">
                     @can('sessoes-iniciar')<a href="{{ route('sessions.create') }}" class="btn btn-success d-none d-md-inline-block text-white" target="_self"> <i class="fab fa-whatsapp"></i> Criar uma sessão</a>@endcan
-                </div>
-
-                @else
-                <div class="text-end upgrade-btn">
-                    @can('sessoes-comprar-slot')<a href="#" onclick="alert('Em breve');" class="btn btn-primary btn-sm float-right"> <i class="fas fa-cart-plus"></i> Comprar slots </a>@endcan
                 </div>
                 @endif
 
@@ -46,12 +41,6 @@
                 <div class="alert alert-warning" role="alert">
                     O <strong>status da sessão</strong> e <strong>situação da sessão</strong> corresponde a data: {{ \Carbon\Carbon::now()->subMinutes(1)->format('d/m/Y H:i:s') }}
                 </div>
-
-                @if( !isset(\Auth::user()->server_whatsapp))
-                <div class="alert alert-danger" role="alert">
-                    <i class="fas fa-cloud"></i> Você precisa configurar um <strong> servidor de whatsapp </strong> para se conectar.
-                </div>
-                @endif
 
             </div>
 

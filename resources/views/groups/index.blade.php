@@ -37,6 +37,7 @@
                 <div class="alert alert-danger" role="alert">
                     <i class="fas fa-cloud"></i> Você precisa configurar um <strong> servidor de whatsapp </strong> para poder divulgar em grupos.
                 </div>
+
                 @endif
 
                 <div class="mt-2">

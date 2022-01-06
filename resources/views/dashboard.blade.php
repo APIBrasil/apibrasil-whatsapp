@@ -31,16 +31,6 @@
 
             <div class="mt-2">
                 @include('layouts.partials.messages')
-
-                <div class="alert alert-danger" role="alert">
-                    <i class="fas fa-life-ring"></i> Esse sistema está em <strong> versão beta tester</strong> , em caso de problema. Favor enviar para <a href="http://wa.me/5531995360492"> Jonathan </a> </a>
-                </div>
-
-                @if( !isset(\Auth::user()->server_whatsapp))
-                <div class="alert alert-danger" role="alert">
-                    <i class="fas fa-cloud"></i> Você precisa configurar um <strong> servidor de whatsapp </strong> para se conectar. <a href="{{ route('users.index', \Auth::user()->id) }}" class="btn btn-sm btn-primary"> Configurar </a>
-                </div>
-                @endif
             </div>
 
             <div class="row">

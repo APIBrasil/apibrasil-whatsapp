@@ -7,6 +7,7 @@ use App\Models\Sessions;
 use DataTables;
 use Carbon\Carbon;
 use Log;
+use Auth;
 //use \Yajra\DataTables\Facades\DataTables;
 class SessionsController extends Controller
 {
@@ -74,8 +75,8 @@ class SessionsController extends Controller
 
         $sessions = Sessions::where('user_id', $request->user()->id)->count();
 
-        if($sessions > 0){
-            return redirect()->route('sessions.index')->withSuccess('Limite de sessões atingido!');
+        if($sessions >= Auth::user()->roles()->first()->qt_devices){
+            return redirect()->route('sessions.index')->with('error', 'Limite de sessões atingido!');
         }
 
         $sessions = Sessions::get();
@@ -89,7 +90,7 @@ class SessionsController extends Controller
             $request->merge(['user_id' => $request->user()->id]);
 
             Sessions::create($request->all());
-            return redirect()->route('sessions.index')->withSuccess('Session created successfully');
+            return redirect()->route('sessions.index')->with('success','Session created successfully');
 
         } catch (\Throwable $th) {
             \Log::critical(['Erro ao criar sessão', $th->getMessage()]);

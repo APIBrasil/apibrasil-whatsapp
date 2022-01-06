@@ -16,9 +16,9 @@ class CreateSessionsTable extends Migration
         Schema::create('sessions', function (Blueprint $table) {
             $table->id();
 
-            $table->string('session_name')->nullable();
-            $table->string('session_key')->nullable();
-            $table->string('session_api_token')->nullable();
+            $table->string('session_name')->nullable()->unique();
+            $table->string('session_key')->nullable()->unique();
+            $table->string('session_api_token')->nullable()->unique();
 
             $table->string('webhook_wh_message')->nullable();
             $table->string('webhook_wh_status')->nullable();

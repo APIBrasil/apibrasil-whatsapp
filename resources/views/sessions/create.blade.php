@@ -33,7 +33,17 @@
 
             <form method="POST" action="{{ route('sessions.store') }}" class="row">
                 @csrf
-                <div class="mb-3 col-sm-4">
+
+                <div class="mb-3 col-6">
+                    <label for="server_whatsapp" class="form-label">Servidor MYZAP 2.0</label>
+                    <input value="{{ old('server_whatsapp') }}" type="text" class="form-control" name="server_whatsapp" placeholder="https://servermyzap.com:port" required>
+
+                    @if ($errors->has('server_whatsapp'))
+                    <span class="text-danger text-left">{{ $errors->first('server_whatsapp') }}</span>
+                    @endif
+                </div>
+
+                <div class="mb-3 col-sm-3">
                     <label for="session_name" class="form-label">Nome da sessão</label>
                     <input value="{{ old('session_name') }}" type="text" class="form-control" name="session_name" placeholder="Nome da sessão" required>
 
@@ -42,9 +52,9 @@
                     @endif
                 </div>
 
-                <div class="mb-3 col-sm-4">
-                    <label for="session_key" class="form-label">Número do WhatsApp</label>
-                    <input value="{{ old('session_key') }}" type="tel" id="session_key"  class="form-control" name="session_key" placeholder="Número do WhatsApp" required>
+                <div class="mb-3 col-sm-3">
+                    <label for="session_key" class="form-label">Chave da sessão</label>
+                    <input value="{{ old('session_key') }}" type="tel" id="session_key"  class="form-control" name="session_key" placeholder="Chave da sessão" required>
 
                     @if ($errors->has('session_key'))
                     <span class="text-danger text-left">{{ $errors->first('session_key') }}</span>
