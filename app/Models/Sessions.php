@@ -13,6 +13,8 @@ class Sessions extends Model
 
     protected $fillable = [
 
+        'server_whatsapp',
+        'apitoken',
         'session_name',
         'session_key',
         'session_api_token',

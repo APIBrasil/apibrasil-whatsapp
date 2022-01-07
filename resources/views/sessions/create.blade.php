@@ -43,18 +43,26 @@
                     @endif
                 </div>
 
-                <div class="mb-3 col-sm-3">
+                <div class="mb-3 col-6">
+                    <label for="apitoken" class="form-label">Chave da API</label>
+                    <input value="{{ old('apitoken') }}" type="text" class="form-control" name="apitoken" placeholder="SUAAPIKEY1234" required>
+                    @if ($errors->has('apitoken'))
+                    <span class="text-danger text-left">{{ $errors->first('apitoken') }}</span>
+                    @endif
+                </div>
+
+                <div class="mb-3 col-sm-6">
                     <label for="session_name" class="form-label">Nome da sessão</label>
-                    <input value="{{ old('session_name') }}" type="text" class="form-control" name="session_name" placeholder="Nome da sessão" required>
+                    <input value="{{ old('session_name') }}" type="text" class="form-control" name="session_name" placeholder="Samsung S1" required>
 
                     @if ($errors->has('session_name'))
                     <span class="text-danger text-left">{{ $errors->first('session_name') }}</span>
                     @endif
                 </div>
 
-                <div class="mb-3 col-sm-3">
+                <div class="mb-3 col-sm-6">
                     <label for="session_key" class="form-label">Chave da sessão</label>
-                    <input value="{{ old('session_key') }}" type="tel" id="session_key"  class="form-control" name="session_key" placeholder="Chave da sessão" required>
+                    <input value="{{ old('session_key') }}" type="tel" id="session_key"  class="form-control" name="session_key" placeholder="ABC1234ABC1234" required>
 
                     @if ($errors->has('session_key'))
                     <span class="text-danger text-left">{{ $errors->first('session_key') }}</span>

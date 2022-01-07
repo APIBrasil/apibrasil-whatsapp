@@ -74,17 +74,6 @@
                     </div>
 
                     <div class="mb-3  col-3">
-                        <label for="server_whatsapp" class="form-label">Servidor de WhatsApp</label>
-                        <select class="form-control" name="server_whatsapp" id="server_whatsapp">
-                            <option value="https://whatsapp-srv05.apigratis.com.br/"  @if($user->server_whatsapp == 'https://whatsapp-srv05.apigratis.com.br/') selected @endif>Servidor 05</option>
-                            <option value="https://whatsapp-srv06.apigratis.com.br/"  @if($user->server_whatsapp == 'https://whatsapp-srv06.apigratis.com.br/') selected @endif>Servidor 06</option>
-                        </select>
-                        @if ($errors->has('server_whatsapp'))
-                        <span class="text-danger text-left">{{ $errors->first('server_whatsapp') }}</span>
-                        @endif
-                    </div>
-
-                    <div class="mb-3  col-3">
                         <label for="block_mail" class="form-label">Desligar aviso e-mail</label>
                         <select class="form-control" name="block_mail" id="block_mail">
                             <option value="0"  @if($user->block_mail == 1) selected @endif>Não</option>
@@ -95,6 +84,7 @@
                         @endif
                     </div>
 
+                    @if($roles->count() > 1)
                     <div class="mb-3  col-3">
                         <label for="role" class="form-label">Plano</label>
                         <select class="form-control" name="role">
@@ -109,6 +99,7 @@
                         <span class="text-danger text-left">{{ $errors->first('role') }}</span>
                         @endif
                     </div>
+                    @endif
 
                     <div class="row">
 

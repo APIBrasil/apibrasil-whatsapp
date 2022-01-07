@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-4 align-self-center">
-                @if( count($sessions) >= Auth::user()->roles()->first()->qt_devices)
+                @if( count($sessions) <= Auth::user()->roles()->first()->qt_devices)
                 <div class="text-end upgrade-btn">
                     @can('sessoes-iniciar')<a href="{{ route('sessions.create') }}" class="btn btn-success d-none d-md-inline-block text-white" target="_self"> <i class="fab fa-whatsapp"></i> Criar uma sessão</a>@endcan
                 </div>
@@ -64,7 +64,7 @@
                         @if($item->status == 'CONNECTED')
                         <td><a href="#" onclick="showInfo('{{$item->id}}');"> <i class="fas fa-mobile text-success"></i> {{ $item->session_key }} </a> </td>
                         @else
-                        <td><i class="fas fa-mobile text-danger"></i> {{ $item->session_key }} </td>
+                        <td><a href="#" onclick="showInfo('{{$item->id}}');"> <i class="fas fa-mobile text-danger"></i> {{ $item->session_key }} </a></td>
                         @endif
 
                         <td>{{ \Carbon\Carbon::parse($item->created_at)->format('d/m/y H:i:s') }}</td>
@@ -83,7 +83,7 @@
                             @elseif( $item->status == 'STARTING')
                             <a class="btn btn-sm btn-warning" id="btnOpenSession" title="Iniciando a sessão, aguarde"> <i class="fas fa-clock"></i> </a>
                             @else
-                            <a class="btn btn-sm btn-success" id="btnOpenSession" data-session="{{$item}}" onclick="openModalQr('{{ $item->session_name }}','{{ $item->session_key }}')"> <i class="fas fa-play"></i> </a>
+                            <a class="btn btn-sm btn-success" id="btnOpenSession" data-session="{{$item}}" onclick="openModalQr('{{ $item->server_whatsapp }}', '{{ $item->session_name }}','{{ $item->session_key }}')"> <i class="fas fa-play"></i> </a>
                             <a class="btn btn-primary btn-sm" href="{{ route('sessions.edit', $item->id) }}"> <i class="fas fa-edit"></i> </a>
                             @endif
 
@@ -283,7 +283,24 @@
         document.getElementById('imageQr').src = "https://cdn.dribbble.com/users/1187836/screenshots/6012802/13-qrcode.gif"
     });
 
-    async function openModalQr(sessionName, sessionKey) {
+    async function openModalQr(host, sessionName, sessionKey) {
+
+        console.log(host, sessionName, sessionKey)
+        socket = io(host);
+
+        socket.on(`events`, (events) => {
+            $(".session_state").html(`<span title="Situação da Sessão"> <i class="fas fa-mobile"></i> ${events?.state || 'Desconectado'} </span>`)
+            console.log(events)
+        })
+
+        socket.on(`send-message`, (message) => {
+            $(".session_state").html(`<span title="Status da última mensagem"> <i class="far fa-envelope"></i> ${message?.status || ''} </span>`)
+            console.log(message)
+        })
+
+        setTimeout(() => {
+            $(".session_state").html(``)
+        }, 10000)
 
         data = $("#btnOpenSession").data("session")
 

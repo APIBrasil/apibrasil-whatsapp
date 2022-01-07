@@ -16,9 +16,7 @@ class Controller extends BaseController
 
         try {
 
-            $apiKey = env('WHATSAPP_API_TOKEN');
-            $host = isset($request->user()->server_whatsapp) ? $request->user()->server_whatsapp : $request['server_whatsapp'];
-            $client = new Client([ 'base_uri' => $host ]);
+            $client = new Client([ 'base_uri' => $session->server_whatsapp ]);
 
             $header = [
                 'Content-Type' => 'application/json',
@@ -27,8 +25,7 @@ class Controller extends BaseController
 
             switch ($action) {
                 case 'start':
-                    $header['apitoken'] = $apiKey;
-                    //$header['sessionkey'] = $session->session_key ? $session->session_key : '';
+                    $header['apitoken'] = $session->apitoken;
                     break;
             }
 

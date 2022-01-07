@@ -183,10 +183,14 @@ class SessionsController extends Controller
                 "wh_message" => $session->webhook_wh_message ?? ''
             ], 'start'), true, JSON_UNESCAPED_UNICODE);
 
-            $update = Sessions::find($session->id);
-            $update->update([
-                'status' => 'CONNECTED'
-            ]);
+            if( isset($start['result']) and $start['result'] != 401){
+
+                $update = Sessions::find($session->id);
+                $update->update([
+                    'status' => 'CONNECTED'
+                ]);
+
+            };
 
             return response()->json([
                 'error' => false,
@@ -337,23 +341,27 @@ class SessionsController extends Controller
 
             $session = Sessions::findOrFail($id);
 
-            self::requestIntegracao($request, $session, [
-                "session" => $session->session_name,
-            ], 'close');
+            try {
+                self::requestIntegracao($request, $session, [
+                    "session" => $session->session_name,
+                ], 'close');
 
-            self::requestIntegracao($request, $session, [
-                "session" => $session->session_name,
-            ], 'deleteSession');
+                self::requestIntegracao($request, $session, [
+                    "session" => $session->session_name,
+                ], 'deleteSession');
+            } catch (\Throwable $th) {
+                Log::error(['Falha ao deletar sessão', $th->getMessage()]);
+            }
 
             $session->delete();
 
             return redirect()->route('sessions.index')
-                        ->withSuccess('Sessão deletada com sucesso!');
+                        ->with('success', 'Sessão deletada com sucesso!');
 
         } catch (\Throwable $th) {
 
             return redirect()->route('sessions.index')
-                        ->withErrors('Problema ao deletar a sessão!');
+                        ->with('error', 'Problema ao deletar a sessão!'. $th->getMessage());
 
         }
     }
