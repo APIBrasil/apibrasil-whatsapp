@@ -100,9 +100,14 @@
                 </tbody>
             </table>
             @else
-            <div class="alert alert-danger" role="alert">
-                <i class="fas fa-cloud"></i> Você não permissão para visualizar isso, solicite em contato@apigratis.com.br.
+            <div class="m-2">
+
+                <div class="alert alert-danger" role="alert">
+                    <i class="fas fa-cloud"></i> Você não permissão para visualizar isso, solicite em contato@apigratis.com.br.
+                </div>
+
             </div>
+
             @endcan
 
             {!! $sessions->links() !!}
