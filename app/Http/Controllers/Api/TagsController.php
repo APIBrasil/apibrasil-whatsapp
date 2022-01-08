@@ -13,9 +13,9 @@ class TagsController extends Controller
         try {
 
             $this->validate($request, [
-                'name' => 'required|string|max:118|min:1',
-                'description' => 'required|max:118|min:1|string',
-                'color' => 'nullable|max:900|min:1|string',
+                'body' => 'required|string|max:118|min:1',
+                'service' => 'required|max:118|min:1|string',
+                'session_key' => 'nullable|max:900|min:1|string',
             ]);
 
             $request->merge(['user_id' => $request->user()->id]);

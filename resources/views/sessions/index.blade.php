@@ -148,6 +148,40 @@
 
                         <div class="row">
 
+                            <h4> Dados da API e sessão </h4>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="server_whatsapp" class="form-label">Servidor MyZAP 2.0</label>
+                                    <input class="form-control" name="server_whatsapp" disabled />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="apitoken" class="form-label">API Token</label>
+                                    <input class="form-control" name="apitoken" disabled />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="session_key" class="form-label">Session Key</label>
+                                    <input class="form-control" name="session_key" disabled />
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="session_name" class="form-label">Session Name</label>
+                                    <input class="form-control" name="session_name" disabled />
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+
+                        <div class="row">
+
                             <div class="col-sm-4">
                                 <div class="form-group">
                                     <label for="connected" class="form-label">Connectado</label>
@@ -170,8 +204,6 @@
                             </div>
 
                         </div>
-
-
 
                         <div class="row">
 
@@ -424,6 +456,17 @@
                 $('.modal-body').LoadingOverlay('hide');
             },
             error: function(error) {
+
+                Swal.fire({
+                    class: 'error',
+                    icon: 'error',
+                    title: `${error?.responseJSON?.reason ?? 'Erro desconhecido ao iniciar!'}`,
+                    text: `${error?.responseJSON?.message ?? 'Verifique o token da sua API e dados da sessão.'}`,
+                    footer: '<a href="https://wa.me/5531995360492" target="_blank">Precisa de ajuda?</a>'
+                }).then((value) => {
+                    window.location.reload();
+                })
+
                 $('.modal-body').LoadingOverlay('hide');
             },
         });
@@ -458,20 +501,25 @@
                 $(".modal-title").html(`Visualizar grupo`);
                 $('#modalShowSession').modal('show');
 
-                $("input[name='connected']").val(`${data?.connected ?? 'Indispoível'}`);
-                $("input[name='locales']").val(`${data?.locales ?? 'Indispoível'}`);
-                $("input[name='number']").val(`${data?.number ?? 'Indispoível'}`);
-                $("input[name='device_manufacturer']").val(`${data?.phone?.device_manufacturer ?? 'Indispoível'}`);
-                $("input[name='device_model']").val(`${data?.phone?.device_model ?? 'Indispoível'}`);
-                $("input[name='mcc']").val(`${data?.phone?.mcc ?? 'Indispoível'}`);
-                $("input[name='mnc']").val(`${data?.phone?.mnc ?? 'Indispoível'}`);
-                $("input[name='os_build_number']").val(`${data?.phone?.os_build_number ?? 'Indispoível'}`);
-                $("input[name='os_version']").val(`${data?.phone?.os_version ?? 'Indispoível'}`);
-                $("input[name='wa_version']").val(`${data?.phone?.wa_version ?? 'Indispoível'}`);
-                $("input[name='pushname']").val(`${data?.pushname ?? 'Indispoível'}`);
+                $("input[name='server_whatsapp']").val(`https://${ window.location.href.split('/')[2] }/api/myzap`);
+                $("input[name='apitoken']").val(`${data?.session?.apitoken ?? 'Indispoível'}`);
+                $("input[name='session_key']").val(`${data?.session?.session_key ?? 'Indispoível'}`);
+                $("input[name='session_name']").val(`${data?.session?.session_name ?? 'Indispoível'}`);
 
-                if(data?.phone?.device_manufacturer){
-                    $("#imgModelo").attr('src', `${ data?.phone?.device_manufacturer == 'Apple' ? 'http://simpleicon.com/wp-content/uploads/apple.png' : `https://cdn-icons-png.flaticon.com/512/174/174836.png` }`);
+                $("input[name='connected']").val(`${data?.host?.connected ?? 'Indispoível'}`);
+                $("input[name='locales']").val(`${data?.host?.apitoken ?? 'Indispoível'}`);
+                $("input[name='number']").val(`${data?.host?.number ?? 'Indispoível'}`);
+                $("input[name='device_manufacturer']").val(`${data?.host?.phone?.device_manufacturer ?? 'Indispoível'}`);
+                $("input[name='device_model']").val(`${data?.host?.phone?.device_model ?? 'Indispoível'}`);
+                $("input[name='mcc']").val(`${data?.host?.phone?.mcc ?? 'Indispoível'}`);
+                $("input[name='mnc']").val(`${data?.host?.phone?.mnc ?? 'Indispoível'}`);
+                $("input[name='os_build_number']").val(`${data?.host?.phone?.os_build_number ?? 'Indispoível'}`);
+                $("input[name='os_version']").val(`${data?.host?.phone?.os_version ?? 'Indispoível'}`);
+                $("input[name='wa_version']").val(`${data?.host?.phone?.wa_version ?? 'Indispoível'}`);
+                $("input[name='pushname']").val(`${data?.host?.pushname ?? 'Indispoível'}`);
+
+                if(data?.host?.phone?.device_manufacturer){
+                    $("#imgModelo").attr('src', `${ data?.host?.phone?.device_manufacturer == 'Apple' ? 'http://simpleicon.com/wp-content/uploads/apple.png' : `https://cdn-icons-png.flaticon.com/512/174/174836.png` }`);
                 }
                 $.LoadingOverlay('hide');
 

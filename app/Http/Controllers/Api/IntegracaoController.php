@@ -8,9 +8,64 @@ use App\Models\Sessions;
 use App\Models\Groups;
 use App\Models\Contacts;
 use App\Models\Messages;
-
+use GuzzleHttp\Client;
 class IntegracaoController extends Controller
 {
+    public function myzap (Request $request)
+    {
+
+        try {
+
+            if( !isset($request->session_key) ){
+                return response()->json(['error' => 'session_key obrigatorio'], 400);
+            }
+
+            $session = Sessions::where('session_key', $request->session_key)
+            ->where('user_id', $request->user()->id)
+            ->first();
+
+            if( !isset($session) ){
+                return response()->json(['error' => 'session nao encontrada'], 404);
+            }
+
+            if( !isset($request->service) ){
+                return response()->json(['error' => 'service e obrigatorio'], 400);
+            }
+
+            if( !isset($request->body) and is_array($request->body) ){
+                return response()->json(['error' => 'body obrigatorio'], 400);
+            }
+
+            $client = new Client([ 'base_uri' => $session->server_whatsapp ]);
+
+            $header = [
+                'Content-Type' => 'application/json',
+                "sessionkey" => $session->session_key ? $session->session_key : '',
+            ];
+
+            \Log::notice([
+                'header requestIntegracao', json_encode($header),
+                'body requestIntegracao', json_encode($request->body)
+            ]);
+
+            $response = $client->post($request->service, [
+                "verify" => false,
+                'body' => json_encode($request->body),
+                'headers' => $header,
+            ]);
+
+            $body = $response->getBody();
+            return response()->json(json_decode($body), 200);
+
+        } catch (\GuzzleHttp\Exception\ClientException $e) {
+
+            \Log::critical(['Falha myzap', $e->getMessage()]);
+
+            $response = $e->getResponse();
+            return (string)($response->getBody(500));
+        }
+    }
+
     public function sendText(Request $request)
     {
         try {
@@ -83,7 +138,7 @@ class IntegracaoController extends Controller
     {
         try {
 
-            $sessions = Sessions::where('user_id', auth()->user()->id)
+            $sessions = Sessions::where('user_id', $request->user()->id)
             ->orderBy('id', 'desc')
             ->limit($request->limit)
             ->get();

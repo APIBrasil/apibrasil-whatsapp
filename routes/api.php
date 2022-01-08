@@ -16,6 +16,8 @@ Route::group(['middleware' => 'jwt.verify'], function () {
     Route::post('logout', [JwtAuthController::class,'logout']);
     Route::get('me', [JwtAuthController::class,'me']);
 
+    Route::post('myzap', [IntegracaoController::class,'myzap']);
+
     Route::get('messages', [IntegracaoController::class,'messages']);
     Route::get('sessions', [IntegracaoController::class,'sessions']);
     Route::post('sendText', [IntegracaoController::class,'sendText']);

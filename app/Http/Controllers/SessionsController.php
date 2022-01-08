@@ -109,72 +109,6 @@ class SessionsController extends Controller
             ->where('user_id', $request->user()->id)
             ->first();
 
-            $checkSession = json_decode($this->requestIntegracao($request, $session, [
-                'session' => $session->session_name,
-            ], 'getHostDevice'), true, JSON_UNESCAPED_UNICODE);
-
-            Log::info(['status da sessao', $checkSession]);
-
-            if( isset($checkSession) and isset($checkSession['status']) )
-            {
-                \Log::notice(['Start uma sessão', $session]);
-                switch ($checkSession['status']) {
-                    case 'Disconnected':
-
-                        $start = json_decode(self::requestIntegracao($request, $session, [
-                            "session" => $session->session_name,
-                            "wh_connect" => $session->webhook_wh_connect ?? '',
-                            "wh_qrcode" => $session->webhook_qr_code ?? '',
-                            "wh_status" => $session->webhook_wh_status ?? '',
-                            "wh_message" => $session->webhook_wh_message ?? ''
-                        ], 'start'), true, JSON_UNESCAPED_UNICODE);
-
-                        $update = Sessions::find($session->id);
-                        $update->update([ 'status' => $checkSession['status'] ? $checkSession['status'] : 'DISCONNECTED' ]);
-                        \Log::notice(['Callback do start', $start]);
-
-                    return response()->json($start);
-                }
-            }
-
-            if( isset($checkSession) and isset($checkSession['result']))
-            {
-                \Log::notice(['Callback do start', $checkSession]);
-                if( intVal($checkSession['result']) == 200 ){
-
-                    $host = json_decode($this->requestIntegracao($request, $session, [
-                        'session' => $session->session_name ?? '',
-                    ], 'getHostDevice'), true, JSON_UNESCAPED_UNICODE);
-
-                    $update = Sessions::find($session->id);
-                    $update->update([ 'status' => 'CONNECTED']);
-
-                    $session->update([
-                        'ip_host' => self::getIp() ?? '',
-                        'last_connected' => Carbon::now(),
-                        'connected' => $host['connected'] ?? '',
-                        'locales' => $host['locales'] ?? '',
-                        'number' => $host['number'] ?? '',
-                        'device_manufacturer' => $host['phone']['device_manufacturer'] ?? '',
-                        'device_model' => $host['phone']['device_model'] ?? '',
-                        'mcc' => $host['phone']['mcc'] ?? '',
-                        'mnc' => $host['phone']['mnc'] ?? '',
-                        'os_build_number' => $host['phone']['os_build_number'] ?? '',
-                        'os_version' => $host['phone']['os_version'] ?? '',
-                        'wa_version' => $host['phone']['wa_version'] ?? '',
-                        'pushname' => $host['pushname'] ?? '',
-                        'result' => $host['result'] ?? ''
-                    ]);
-
-                    return response()->json([
-                        'error' => false,
-                        'message' => 'Sessão já foi iniciada, aguarde até 60 segundos para sincronização dos status...',
-                        'checksession' => $checkSession,
-                        'sessions' => $session
-                    ], 200);
-                }
-            }
-
             $start = json_decode(self::requestIntegracao($request, $session, [
                 "session" => $session->session_name,
                 "wh_connect" => $session->webhook_wh_connect ?? '',
@@ -183,19 +117,21 @@ class SessionsController extends Controller
                 "wh_message" => $session->webhook_wh_message ?? ''
             ], 'start'), true, JSON_UNESCAPED_UNICODE);
 
-            if( isset($start['result']) and $start['result'] != 401){
+            if(isset($start['result']) and $start['result'] == 401){
+                return response()->json($start, 401);
+            }
 
+            if( isset($start['result']) and $start['result'] != 401){
                 $update = Sessions::find($session->id);
                 $update->update([
                     'status' => 'CONNECTED'
                 ]);
-
             };
 
             return response()->json([
                 'error' => false,
                 'message' => 'Sua sessão foi iniciada com sucesso, aguarde.',
-                'checksession' => $checkSession,
+                //'checksession' => $checkSession,
                 'sessions' => $session
             ], 200);
 
@@ -243,7 +179,7 @@ class SessionsController extends Controller
                 'result' => $host['result'] ?? ''
             ]);
 
-            return response()->json($host);
+            return response()->json(['host' => $host, 'session' => $session], 200);
 
         } catch (\Throwable $th) {
 
@@ -294,7 +230,8 @@ class SessionsController extends Controller
     {
         try {
 
-            $session = Sessions::where('user_id', $request->user()->id)->whereId($id)->first();
+            $session = Sessions::where('user_id', $request->user()->id)
+            ->whereId($id)->first();
 
             if(isset($session->session_name)){
 
