@@ -140,13 +140,13 @@ class UsersController extends Controller
             $user->syncRoles($request->get('role'));
 
             return redirect()->route('users.index')
-                ->withSuccess(__('User updated successfully.'));
+                ->with(['sucess', 'User updated successfully.']);
 
         } catch (\Throwable $th) {
 
             Log::critical('Error editar usuario: ' . $th->getMessage());
             return redirect()->route('users.index')
-                ->withError(__('User not found.'));
+                ->with(['error' => $th->getMessage()]);
         }
 
 
