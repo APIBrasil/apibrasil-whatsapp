@@ -73,14 +73,21 @@ class SessionsController extends Controller
     public function create(Request $request)
     {
 
-        $sessions = Sessions::where('user_id', $request->user()->id)->count();
+        try {
 
-        if($sessions >= Auth::user()->roles()->first()->qt_devices){
-            return redirect()->route('sessions.index')->with('error', 'Limite de sessões atingido!');
+            $sessions = Sessions::where('user_id', $request->user()->id)->count();
+
+            if($sessions >= Auth::user()->roles()->first()->qt_devices){
+                return redirect()->route('sessions.index')->with('error', 'Limite de sessões atingido!');
+            }
+
+            $sessions = Sessions::get();
+            return view('sessions.create', compact('sessions'));
+
+        } catch (\Throwable $th) {
+            throw $th;
         }
 
-        $sessions = Sessions::get();
-        return view('sessions.create', compact('sessions'));
     }
 
     public function store(Request $request)
@@ -93,9 +100,11 @@ class SessionsController extends Controller
             return redirect()->route('sessions.index')->with('success','Session created successfully');
 
         } catch (\Throwable $th) {
+
             \Log::critical(['Erro ao criar sessão', $th->getMessage()]);
             return redirect()->route('sessions.index')
-            ->withErrors('Problema ao criar a sessão!');
+            ->with('error', $th->getMessage());
+
         }
 
     }
