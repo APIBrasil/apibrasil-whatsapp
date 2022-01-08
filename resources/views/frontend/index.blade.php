@@ -527,32 +527,15 @@
                             <div class="single-footer latest-news">
                                 <h3>Ultimas novidades</h3>
                                 <div class="single-head">
-                                    <!-- Start Single News -->
+                                    @forelse($posts as $post)
                                     <div class="single-news">
                                         <span class="date"><a href="javascript:void(0)">NOVEMBER 29, 2023</a></span>
-                                        <h4 class="post-title"><a href="blog-single.html">An artistic Technology turning
-                                                real here</a>
+                                        <h4 class="post-title"><a href="blog-single.html">{{ substr($post->description, 0, 50) }}</a></>
                                         </h4>
                                     </div>
-                                    <!-- End Single News -->
-                                    <!-- Start Single News -->
-                                    <div class="single-news">
-                                        <span class="date"><a href="javascript:void(0)">NOVEMBER 22, 2023</a></span>
-                                        <h4 class="post-title"><a href="blog-single.html">better time for buying a web
-                                                hosting is
-                                                today</a>
-                                        </h4>
-                                    </div>
-                                    <!-- End Single News -->
-                                    <!-- Start Single News -->
-                                    <div class="single-news">
-                                        <span class="date"><a href="javascript:void(0)">NOVEMBER 15, 2023</a></span>
-                                        <h4 class="post-title"><a href="blog-single.html">better time for buying a web
-                                                hosting is
-                                                today</a>
-                                        </h4>
-                                    </div>
-                                    <!-- End Single News -->
+                                    @empty
+                                    Sem novidades!
+                                    @endforelse
                                 </div>
                             </div>
                             <!-- End Single Widget -->
