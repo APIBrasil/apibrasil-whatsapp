@@ -529,7 +529,7 @@
                                 <div class="single-head">
                                     @forelse($posts as $post)
                                     <div class="single-news">
-                                        <span class="date"><a href="javascript:void(0)">NOVEMBER 29, 2023</a></span>
+                                        <span class="date"><a href="javascript:void(0)">{{ \Carbon\Carbon::parse($post->created_at)->format("d/m/Y H:i:s") }}</a></span>
                                         <h4 class="post-title"><a href="blog-single.html">{{ substr($post->description, 0, 50) }}</a></>
                                         </h4>
                                     </div>
