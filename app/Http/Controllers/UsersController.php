@@ -77,7 +77,7 @@ class UsersController extends Controller
         ]));
 
         return redirect()->route('users.index')
-            ->withSuccess(__('User created successfully.'));
+            ->with(['success', 'User updated successfully.']);
     }
 
     public function show(User $user, Request $request)
@@ -125,7 +125,7 @@ class UsersController extends Controller
 
             Log::critical('Error editar usuario: ' . $th->getMessage());
             return redirect()->route('users.index')
-                ->withError(__('User not found.'));
+            ->with(['error' => $th->getMessage()]);
         }
 
     }
