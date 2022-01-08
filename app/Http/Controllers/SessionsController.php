@@ -159,6 +159,12 @@ class SessionsController extends Controller
             ->where('user_id', $request->user()->id)
             ->first();
 
+            if($request->user()->can('sessoes-todas')) {
+                $session = Sessions::whereId($id)
+                ->first();
+            }
+
+
             if(!isset($session)) {
                 return response()->json(['message' => 'Sessão não encontrada'], 500);
             }
