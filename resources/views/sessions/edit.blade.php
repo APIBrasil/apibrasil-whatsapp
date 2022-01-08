@@ -36,7 +36,7 @@
                 @csrf
                 <div class="mb-3 col-6">
                     <label for="server_whatsapp" class="form-label">Servidor MYZAP 2.0</label>
-                    <input value="{{ old('server_whatsapp') }}" type="text" class="form-control" value="{{ $session->server_whatsapp }}" name="server_whatsapp" placeholder="https://servermyzap.com:port" required>
+                    <input  type="text" class="form-control" value="{{ $session->server_whatsapp }}" name="server_whatsapp" placeholder="https://servermyzap.com:port" required>
 
                     @if ($errors->has('server_whatsapp'))
                     <span class="text-danger text-left">{{ $errors->first('server_whatsapp') }}</span>
@@ -45,7 +45,7 @@
 
                 <div class="mb-3 col-6">
                     <label for="apitoken" class="form-label">Chave da API</label>
-                    <input value="{{ old('apitoken') }}" type="text" class="form-control" value="{{ $session->apitoken }}" name="apitoken" placeholder="SUAAPIKEY1234" required>
+                    <input type="text" class="form-control" value="{{ $session->apitoken }}" name="apitoken" placeholder="SUAAPIKEY1234" required>
                     @if ($errors->has('apitoken'))
                     <span class="text-danger text-left">{{ $errors->first('apitoken') }}</span>
                     @endif
@@ -53,7 +53,7 @@
 
                 <div class="mb-3 col-sm-6">
                     <label for="session_name" class="form-label">Nome da sessão</label>
-                    <input value="{{ old('session_name') }}" type="text" class="form-control" value="{{ $session->session_name }}" name="session_name" placeholder="Samsung S1" required>
+                    <input type="text" class="form-control" value="{{ $session->session_name }}" name="session_name" placeholder="Samsung S1" required>
 
                     @if ($errors->has('session_name'))
                     <span class="text-danger text-left">{{ $errors->first('session_name') }}</span>
@@ -62,7 +62,7 @@
 
                 <div class="mb-3 col-sm-6">
                     <label for="session_key" class="form-label">Chave da sessão</label>
-                    <input value="{{ old('session_key') }}" type="tel" id="session_key" value="{{ $session->session_key }}"  class="form-control" name="session_key" placeholder="ABC1234ABC1234" required>
+                    <input type="tel" id="session_key" value="{{ $session->session_key }}"  class="form-control" name="session_key" placeholder="ABC1234ABC1234" required>
 
                     @if ($errors->has('session_key'))
                     <span class="text-danger text-left">{{ $errors->first('session_key') }}</span>
