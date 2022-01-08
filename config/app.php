@@ -180,6 +180,7 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         \Torann\GeoIP\GeoIPServiceProvider::class,
+
     ],
 
     /*

@@ -8,6 +8,7 @@ use DataTables;
 use Carbon\Carbon;
 use Log;
 use Auth;
+use ApiBrasil\ApiGratis;
 //use \Yajra\DataTables\Facades\DataTables;
 class SessionsController extends Controller
 {
@@ -18,6 +19,21 @@ class SessionsController extends Controller
      */
     public function index(Request $request)
     {
+
+        $data = [
+            "server_host" => "https://whatsapp2.contrateumdev.com.br", //required
+            "method" => "POST", //optional
+            "apitoken" => "YOUR_TOKEN_API", //required
+            "session_name" => "YOUR_SESSION_NAME", //required
+            "session_key" => "YOUR_SESSION_KEY", //required
+            "wh_status" => "", //optional
+            "wh_message" => "", //optional
+            "wh_connect" => "", //optional
+            "wh_qrcode" => "", //optional
+        ];
+
+        $teste = ApiGratis::WhatsAppService("start", $data);
+        dd($teste);
 
         try {
 
@@ -78,7 +94,7 @@ class SessionsController extends Controller
             $sessions = Sessions::where('user_id', $request->user()->id)->count();
 
             if($sessions >= Auth::user()->roles()->first()->qt_devices){
-                return redirect()->route('sessions.index')->with('error', 'Limite de sessões atingido!');
+                return redirect()->route('sessions.index')->with('error', 'Limite de dispositivos atingido, compre mais slots para continuar usando o WhatsApp. contato@apigratis.com.br');
             }
 
             $sessions = Sessions::get();
