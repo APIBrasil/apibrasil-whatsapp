@@ -27,9 +27,6 @@ class CreateSessionsTable extends Migration
             $table->string('webhook_wh_connect')->nullable();
             $table->string('webhook_wh_qr_code')->nullable();
 
-            $table->string('status')->nullable();
-            $table->string('state')->nullable();
-
             $table->string('connected')->nullable();
             $table->string('locales')->nullable();
             $table->string('number')->nullable();
