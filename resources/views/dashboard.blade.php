@@ -89,9 +89,7 @@
                                             <td class="align-middle">{{ \Carbon\Carbon::parse($user->created_at)->format('d/m/Y H:i:s') }}</td>
                                             <td class="align-middle">{{ \Carbon\Carbon::parse($user->last_login)->format('d/m/Y H:i:s') }}</td>
                                             <td class="align-middle">{{ $user->messages->count() ?? 0 }}</td>
-                                            <td class="align-middle">{{ $user->contacts->count() ?? 0 }}</td>
                                             <td class="align-middle">{{ $user->sessions->count() ?? 0 }}</td>
-                                            <td class="align-middle">{{ $user->groups->count() ?? 0 }}</td>
                                         </tr>
                                         @empty
                                         @endforelse
