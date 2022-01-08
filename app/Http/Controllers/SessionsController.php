@@ -8,7 +8,6 @@ use DataTables;
 use Carbon\Carbon;
 use Log;
 use Auth;
-use ApiBrasil\ApiGratis;
 //use \Yajra\DataTables\Facades\DataTables;
 class SessionsController extends Controller
 {
@@ -31,9 +30,6 @@ class SessionsController extends Controller
             "wh_connect" => "", //optional
             "wh_qrcode" => "", //optional
         ];
-
-        $teste = ApiGratis::WhatsAppService("start", $data);
-        dd($teste);
 
         try {
 

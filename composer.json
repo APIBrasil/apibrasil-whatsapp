@@ -9,7 +9,6 @@
         "arcanedev/log-viewer": "^8.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "jhowbhz/package-apigratis": "^0.1.2",
         "laravel/framework": "^8.54",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
