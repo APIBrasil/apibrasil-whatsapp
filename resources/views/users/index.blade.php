@@ -61,7 +61,7 @@
 
         tableDefault = $('#table_id').DataTable({
             "lengthMenu": [[10, 25, 50, 100, 200, 300, -1], [10, 25, 50, 100, 200, 300, "Todos"]],
-            "aaSorting": [[ 3, "DESC" ]],
+            "aaSorting": [[ 0, "DESC" ]],
             "dom": "'B'"+"<'row'<'col-sm-6'l><'col-sm-6'f>>\
             <'row'<'col-sm-12'<'table-responsive't>r>>\
             <'row'<'col-sm-5'i><'col-sm-12'p>>",
