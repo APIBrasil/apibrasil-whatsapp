@@ -19,9 +19,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
 
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/img/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/gif" sizes="32x32" href="{{ asset('assets/img/favicon/favicon.gif') }}">
-    <link rel="icon" type="image/gif" sizes="16x16" href="{{ asset('assets/img/favicon/favicon.gif') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="icon" type="image/gif" sizes="32x32" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="icon" type="image/gif" sizes="16x16" href="{{ asset('assets/images/favicon.png') }}">
     <link href="{{ asset('css/style_backend.min.css') }}" rel="stylesheet">
 
     <meta name="csrf-token" content="{{ csrf_token() }}" value="{{ csrf_token() }}" />
