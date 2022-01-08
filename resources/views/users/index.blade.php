@@ -33,6 +33,7 @@
                 <table class="table table-striped" id="table_id" width="100%">
                     <thead>
                         <tr>
+                            <th scope="col">#</th>
                             <th scope="col">Nome</th>
                             <th scope="col">E-mail</th>
                             <th scope="col">Username</th>
@@ -102,21 +103,24 @@
             ajax: '/painel/users/datatables',
             "columnDefs": [
                 {"targets": 0, "render": function (data, type, row) {
-                    return `${ row?.name?.length > 3 ? row?.name : 'Sem nome'}`
+                    return `${ row?.id }`
                 }},
                 {"targets": 1, "render": function (data, type, row) {
-                    return `${ row?.email?.length > 3 ? row?.email : 'Sem e-mail'}`
+                    return `${ row?.name?.length > 3 ? row?.name : 'Sem nome'}`
                 }},
                 {"targets": 2, "render": function (data, type, row) {
-                    return `${ row?.username ? `<i class="fas fa-user"></i> ${row?.username}` : ''}`
+                    return `${ row?.email?.length > 3 ? row?.email : 'Sem e-mail'}`
                 }},
                 {"targets": 3, "render": function (data, type, row) {
-                    return `${ moment().diff(row?.last_login, 'days') < 1 ? `${ moment(row?.last_login).format('DD/MM/YYYY HH:mm') } <span class="badge bg-success" title="Login recente">N</span>` : ''}`
+                    return `${ row?.username ? `<i class="fas fa-user"></i> ${row?.username}` : ''}`
                 }},
                 {"targets": 4, "render": function (data, type, row) {
+                    return `${ moment().diff(row?.last_login, 'days') < 1 ? `${ moment(row?.last_login).format('DD/MM/YYYY HH:mm') } <span class="badge bg-success" title="Login recente">N</span>` : ''}`
+                }},
+                {"targets": 5, "render": function (data, type, row) {
                     return `${ row?.roles[0]?.name ? `<span class='badge bg-success'> <i class='fas fa-check'></i> ${ row?.roles[0]?.name } </span>` : "<span class='badge bg-danger'> <i class='fas fa-info-circle'></i> SEM PLANO CONTRATADO</span>" }`
                 }},
-                {"targets": 5, "render":  (data, type, row) => {
+                {"targets": 6, "render":  (data, type, row) => {
 
                     let btnEdit = `@can('usuarios-edit')<a href="/painel/users/${row?.id}/edit" class="btn btn-info btn-sm"> <i class="fas fa-edit"></i> </a>@endcan`
                     let btnDelete = `@can('usuarios-destroy')<a class="btn btn-sm btn-danger" onclick="dropItem(${row?.id})" > <i class="fas fa-trash-alt"></i> </a>@endcan`
