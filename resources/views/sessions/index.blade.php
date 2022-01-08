@@ -100,7 +100,7 @@
                 </tbody>
             </table>
             @else
-            <div class="m-2">
+            <div class="mt-2">
 
                 <div class="alert alert-danger" role="alert">
                     <i class="fas fa-cloud"></i> Você não permissão para visualizar isso, solicite em contato@apigratis.com.br.
