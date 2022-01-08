@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contacts;
 use App\Models\Groups;
 
 use App\Models\Messages;
@@ -25,8 +24,7 @@ class DashboardController extends Controller
 
             $aguardando = Messages::where('status', 'Aguardando');
             $enviado = Messages::where('status', 'Enviado');
-            $users = User::withCount('contacts')
-            ->withCount('messages')
+            $users = User::withCount('messages')
             ->withCount('groups')
             ->withCount('sessions')
             ->orderBy('last_login', 'desc')
@@ -40,7 +38,6 @@ class DashboardController extends Controller
                 $enviado = $enviado->where('status', 'Enviado');
 
                 $groups = Groups::get();
-                $contacts = Contacts::get();
 
                 $users = $users->get();
 
@@ -52,7 +49,6 @@ class DashboardController extends Controller
                 $enviado = $enviado->where('user_id', $request->user()->id );
 
                 $groups = Groups::where('user_id', $request->user()->id );
-                $contacts = Contacts::where('user_id', $request->user()->id );
             }
 
             $chart1 = Messages::select(\DB::raw("COUNT(*) as count"), \DB::raw("DAYNAME(created_at) as day_name"), \DB::raw("DAY(created_at) as day"))
@@ -98,7 +94,7 @@ class DashboardController extends Controller
             $posts = Post::orderBy('created_at', 'desc')
             ->limit(3)->get();
 
-            return view('dashboard', compact('posts', 'msgs', 'users', 'aguardando', 'groups', 'contacts', 'enviado', 'chart_data', 'chart_data2'));
+            return view('dashboard', compact('posts', 'msgs', 'users', 'aguardando', 'groups', 'enviado', 'chart_data', 'chart_data2'));
 
         } catch (\Throwable $th) {
 
