@@ -246,6 +246,7 @@
                                         <h5 class="save-price">P/ pequenos projetos e notificações</h5>
                                         <ul class="item-list">
                                             <li>Até 1 Dispositivo</li>
+                                            <li>Servidor MyZap 2.0</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
@@ -274,6 +275,7 @@
                                         <h5 class="save-price">P/ conversação, projetos e notificações</h5>
                                         <ul class="item-list">
                                             <li>Até 5 Dispositivos</li>
+                                            <li>Servidor MyZap 2.0</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
@@ -302,6 +304,7 @@
                                         <h5 class="save-price">P/ conversação, bots e notificações</h5>
                                         <ul class="item-list">
                                             <li>Até 10 Dispositivos</li>
+                                            <li>Servidor MyZap 2.0</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
@@ -330,8 +333,9 @@
                                         <h5 class="save-price">P/ pequenas empresas e grandes projetos</h5>
                                         <ul class="item-list">
                                             <li>Até 20 Dispositivos</li>
+                                            <li>Servidor MyZap 2.0</li>
+                                            <li>Documentação</li>
                                             <li>Painel de sessões</li>
-                                            <li>Documentação V2</li>
                                             <li>Envios ilimitados</li>
                                             <li>Com certificado SSL</li>
                                             <li>Historicos de envios</li>
