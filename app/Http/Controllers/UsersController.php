@@ -140,7 +140,7 @@ class UsersController extends Controller
             $user->syncRoles($request->get('role'));
 
             return redirect()->route('users.index')
-                ->with(['sucess', 'User updated successfully.']);
+                ->with(['success', 'User updated successfully.']);
 
         } catch (\Throwable $th) {
 
