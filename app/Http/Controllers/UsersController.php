@@ -42,10 +42,10 @@ class UsersController extends Controller
         try {
 
             if($request->user()->can('usuarios-todos')) {
-                $users = User::orderBy('created_at', 'DESC')
+                $users = User::orderBy('id', 'DESC')
                 ->with('roles');
             } else {
-                $users = User::orderBy('created_at', 'DESC')
+                $users = User::orderBy('id', 'DESC')
                 ->with('roles')
                 ->where('id', $request->user()->id);
 
