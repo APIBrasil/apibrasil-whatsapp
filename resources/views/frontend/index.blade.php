@@ -309,7 +309,7 @@
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
                                             <li>Com certificado SSL</li>
-                                            <li>Envio c/ agendamento</li>
+                                            <li>Envio c/ agendamento <small> Breve</small></li>
                                             <li>Historicos de envios</li>
                                             <li>Personalizar servidor</li>
                                             <li class="text-success"> <i class="bi bi-whatsapp text-success"></i> Suporte via WhatsApp</li>
@@ -338,8 +338,8 @@
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
                                             <li>Com certificado SSL</li>
+                                            <li>Envio c/ agendamento <small> Breve</small></li>
                                             <li>Historicos de envios</li>
-                                            <li>Envio c/ agendamento</li>
                                             <li>Personalizar servidor</li>
                                             <li class="text-success"><i class="bi bi-whatsapp text-success"></i> Suporte via WhatsApp</li>
                                             <li>10X Alocação de recursos</li>
