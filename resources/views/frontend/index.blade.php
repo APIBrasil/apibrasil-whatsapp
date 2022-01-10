@@ -352,10 +352,10 @@
                 <div class="col-lg-6 col-12">
                     <div class="content">
                         <h2>
-                            <span>PAINEL DE CONTROLE</span>
+                            <span>PAINEL DE CONTROLE 2.0</span>
                             Gerencie seus dispositivos conectados a nossa API, com alertas via e-mail e checagem de sessões a cada 1 minuto.
                         </h2>
-                        <p>Nosso serviço de <strong>CRON Inteligente </strong> verifica o status das suas sessões e a saude dos seus dispositivos conectados.</p>
+                        <p>Nosso serviço de <strong>CRON Inteligente </strong> verifica o status das suas sessões e a saúde dos seus dispositivos conectados.</p>
                         <div class="button">
                             <a href="/register" target="_blank" class="btn">Contratar agora</a>
                         </div>
