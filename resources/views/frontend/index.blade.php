@@ -182,30 +182,6 @@
                 <div class="col-lg-6 col-12">
                     <div class="content">
                         <h2>
-                            <span>PAINEL DE CONTROLE</span>
-                            Gerencie seus dispositivos conectados a nossa API, com alertas via e-mail e checagem de sessões a cada 1 minuto.
-                        </h2>
-                        <p>Nosso serviço de <strong>CRON Inteligente </strong> verifica o status das suas sessões e a saude dos seus dispositivos conectados.</p>
-                        <div class="button">
-                            <a href="/register" target="_blank" class="btn">Contratar agora</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="image">
-                        <img src="https://i.imgur.com/Z87ykYF.png" alt="#">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="content">
-                        <h2>
                             <span>PARCEIROS PROMOCIONAIS </span>
                             Conheça os serviços de API Gratuitos oferecidos pelo nosso parceiro
                         </h2>
@@ -369,9 +345,31 @@
             </div>
         </div>
     </section>
-    <!-- End Pricing Table -->
 
-    <!-- Start Data Center Map Area -->
+    <section class="about section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="content">
+                        <h2>
+                            <span>PAINEL DE CONTROLE</span>
+                            Gerencie seus dispositivos conectados a nossa API, com alertas via e-mail e checagem de sessões a cada 1 minuto.
+                        </h2>
+                        <p>Nosso serviço de <strong>CRON Inteligente </strong> verifica o status das suas sessões e a saude dos seus dispositivos conectados.</p>
+                        <div class="button">
+                            <a href="/register" target="_blank" class="btn">Contratar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="image">
+                        <img src="https://i.imgur.com/Z87ykYF.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="data-center-map section">
         <div class="container">
             <div class="row">
@@ -450,9 +448,7 @@
             </div>
         </div>
     </section>
-    <!-- End Data Center Map Area -->
 
-    <!-- Start Call Action Area -->
     <section class="call-action">
         <div class="container">
             <div class="inner-content">
@@ -475,9 +471,7 @@
             </div>
         </div>
     </section>
-    <!-- End Call Action Area -->
 
-    <!-- Start Footer Area -->
     <footer class="footer section">
         <!-- Start Footer Top -->
         <div class="footer-top">
