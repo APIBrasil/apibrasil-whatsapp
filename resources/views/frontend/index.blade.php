@@ -243,7 +243,7 @@
                                             <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
-                                            <li>Envios ilimitados</li>
+                                            <li>Mensagens ilimitadas</li>
                                             <li>Com certificado SSL</li>
                                             <li class="text-decoration-line-through">Envio c/ agendamento</li>
                                             <li class="text-decoration-line-through">Historicos de envios</li>
@@ -272,7 +272,7 @@
                                             <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
-                                            <li>Envios ilimitados</li>
+                                            <li>Mensagens ilimitadas</li>
                                             <li>Com certificado SSL</li>
                                             <li class="text-decoration-line-through">Envio c/ agendamento</li>
                                             <li class="text-decoration-line-through">Historicos de envios</li>
@@ -301,7 +301,7 @@
                                             <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
-                                            <li>Envios ilimitados</li>
+                                            <li>Mensagens ilimitadas</li>
                                             <li>Com certificado SSL</li>
                                             <li>Envio c/ agendamento <small> Breve</small></li>
                                             <li>Historicos de envios</li>
@@ -330,7 +330,7 @@
                                             <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
-                                            <li>Envios ilimitados</li>
+                                            <li>Mensagens ilimitadas</li>
                                             <li>Com certificado SSL</li>
                                             <li>Envio c/ agendamento <small> Breve</small></li>
                                             <li>Historicos de envios</li>
