@@ -95,8 +95,8 @@
                         <h1 class="wow fadeInUp" data-wow-delay=".4s">
                             Envio de mensagens c/ API do WhatsApp
                         </h1>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Desenvolvido com MyZAP 2.0, a API do WhatsApp mais barata e simples do Brasil.</p>
-                        <h5 class="wow fadeInUp" data-wow-delay=".8s">Começar agora por R$ 49,00 / mês</h5>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Envie mensagens, notificações e integre seus sistemas com o WhatsApp</p>
+                        <h5 class="wow fadeInUp" data-wow-delay=".8s">Planos à partir de R$ 49,00 por mês</h5>
                         <div class="button wow zoomIn" data-wow-delay="1s">
                             <a href="#pricing"><i class="lni lni-arrow-down-circle"></i></a>
                         </div>
