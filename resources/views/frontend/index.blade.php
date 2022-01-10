@@ -2,11 +2,37 @@
 <html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>APIBrasil - Painel MyZAP 2.0</title>
-    <meta name="description" content="" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title> Home | API do WhatsApp para os seus projetos </title>
+
+    <meta name="description" content="Utilize API do WhatsApp para enviar notificações, e mensagens ilimitadas, e tornar os seus sistemas mais inteligentes com mensagens pelo WhatsApp">
+    <meta name="keywords" content="api apirest python node whatsappapi">
+    <meta name="robots" content="all,follow">
+    <meta name="title" content="API do WhatsApp - Para você iniciar seus projetos" />
+    <meta name="company" content="API do WhatsApp - Para você iniciar seus projetos" />
+    <meta name="revisit-after" content="1" />
+    <meta http-equiv="Content-Language" content="pt-br, en, fr, it">
+    <meta name="format-detection" content="telephone=yes" />
+    <meta property="og:image" content="https://apibrasil.com.br/assets/images/facebook.png" />
+    <meta property="og:image:secure_url" content="https://apibrasil.com.br/assets/images/facebook.png" />
+    <meta property="og:image:alt" content="API do WhatsApp - Para você iniciar seus projetos" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:title" content="Serviços de API do WhatsApp para você iniciar seus projetos" />
+    <meta property="og:description" content="Utilize API do WhatsApp para enviar notificações, e mensagens ilimitadas, e tornar os seus sistemas mais inteligentes com mensagens pelo WhatsApp" />
+    <meta property="og:url" content="http://apibrasil.com.br" />
+    <meta property="og:site_name" content="API do WhatsApp - Para você iniciar seus projetos" />
+    <meta property="fb:app_id" content="1777353288971822" />
+    <meta property="og:locale" content="Pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="API do WhatsApp - Para você iniciar seus projetos" />
+    <meta name="twitter:description" content="API do WhatsApp - Para você iniciar seus projetos" />
+
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -185,9 +211,9 @@
                             <span>PARCEIROS PROMOCIONAIS </span>
                             Conheça os serviços de API Gratuitos oferecidos pelo nosso parceiro
                         </h2>
-                        <p>Nosso parceiro de negocíos <strong>APIGratis</strong> oferece serviços de API incríveis e gratuitos para você começar.</p>
+                        <p>Nosso parceiro de negocíos <strong>apibrasil</strong> oferece serviços de API incríveis e gratuitos para você começar.</p>
                         <div class="button">
-                            <a href="https://apigratis.com.br" target="_blank" class="btn">Conhecer nosso parceiro</a>
+                            <a href="https://apibrasil.com.br" target="_blank" class="btn">Conhecer nosso parceiro</a>
                         </div>
                     </div>
                 </div>
