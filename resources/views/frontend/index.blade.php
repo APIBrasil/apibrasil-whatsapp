@@ -93,7 +93,7 @@
                     <div class="hero-content">
                         <h4 class="wow fadeInUp" data-wow-delay=".2s"><strong class="text-white">#Beta100</strong> Cupom de desconto</h4>
                         <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                            Envio de mensagens c/ API do WhatsApp
+                            Envio de mensagens para WhatsApp ilimitado
                         </h1>
                         <p class="wow fadeInUp" data-wow-delay=".6s">Envie mensagens, notificações e integre seus sistemas com o WhatsApp</p>
                         <h5 class="wow fadeInUp" data-wow-delay=".8s">Planos à partir de R$ 49,00 por mês</h5>
