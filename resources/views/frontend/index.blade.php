@@ -65,11 +65,8 @@
                                         <a href="#pricing" aria-label="Toggle navigation">Preços</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#pricing" aria-label="Toggle navigation">Preços</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                            Painel
+                                            Painel de controle
                                         </a>
                                         <ul class="sub-menu collapse" id="submenu-1-1">
                                             <li class="nav-item"><a href="/painel">Entrar</a></li>
