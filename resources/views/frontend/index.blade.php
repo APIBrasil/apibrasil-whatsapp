@@ -357,7 +357,7 @@
                         </h2>
                         <p>Nosso serviço de <strong>CRON Inteligente </strong> verifica o status das suas sessões e a saúde dos seus dispositivos conectados.</p>
                         <div class="button">
-                            <a href="/register" target="_blank" class="btn">Contratar agora</a>
+                            <a href="https://wa.me/5531995360492" target="_blank" class="btn">Contratar agora</a>
                         </div>
                     </div>
                 </div>
