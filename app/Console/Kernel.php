@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
         ->onOneServer()
         ->timezone('America/Sao_Paulo')
         ->environments(['production'])
-        //->withoutOverlapping(10)
+        ->withoutOverlapping(10)
         ->runInBackground();
 
     }

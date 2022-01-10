@@ -287,7 +287,7 @@
                                             <li>1X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="javascript:void(0)">Começar agora</a>
+                                            <a class="btn" href="/register">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
