@@ -27,7 +27,6 @@
       </p>
     <![endif]-->
 
-    <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
@@ -36,15 +35,12 @@
             </div>
         </div>
     </div>
-    <!-- /End Preloader -->
 
-    <!-- Start Header Area -->
     <header class="header navbar-area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="nav-inner">
-                        <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="#hero">
                                 <img src="assets/images/logo-color.png" alt="Logo">
@@ -60,6 +56,9 @@
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
                                         <a href="#hero" class="active" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" aria-label="Toggle navigation">Vantagens</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#pricing" aria-label="Toggle navigation">Preços</a>
@@ -78,18 +77,15 @@
                                         <a href="https://wa.me/5531995360492" target="_blank" aria-label="Toggle navigation">Contato</a>
                                     </li>
                                 </ul>
-                            </div> <!-- navbar collapse -->
+                            </div>
 
                         </nav>
-                        <!-- End Navbar -->
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </header>
-    <!-- End Header Area -->
 
-    <!-- Start Hero Area -->
     <section class="hero-area" id="hero">
         <div class="container">
             <div class="row align-items-center">
@@ -112,7 +108,7 @@
     <!-- End Hero Area -->
 
     <!-- Start Features Area -->
-    <section class="features section">
+    <section class="features section" id="features">
         <img class="shape" src="assets/images/shapes/shape.png" alt="#">
         <div class="container">
             <div class="row">
@@ -244,7 +240,7 @@
                                         <h5 class="save-price">P/ pequenos projetos e notificações</h5>
                                         <ul class="item-list">
                                             <li>Até 1 Dispositivo</li>
-                                            <li>Servidor MyZap 2.0</li>
+                                            <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
@@ -273,7 +269,7 @@
                                         <h5 class="save-price">P/ conversação, projetos e notificações</h5>
                                         <ul class="item-list">
                                             <li>Até 5 Dispositivos</li>
-                                            <li>Servidor MyZap 2.0</li>
+                                            <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
@@ -302,7 +298,7 @@
                                         <h5 class="save-price">P/ conversação, bots e notificações</h5>
                                         <ul class="item-list">
                                             <li>Até 10 Dispositivos</li>
-                                            <li>Servidor MyZap 2.0</li>
+                                            <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
@@ -331,7 +327,7 @@
                                         <h5 class="save-price">P/ pequenas empresas e grandes projetos</h5>
                                         <ul class="item-list">
                                             <li>Até 20 Dispositivos</li>
-                                            <li>Servidor MyZap 2.0</li>
+                                            <li>API WhasApp inclusa</li>
                                             <li>Documentação</li>
                                             <li>Painel de sessões</li>
                                             <li>Envios ilimitados</li>
