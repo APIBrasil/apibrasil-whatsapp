@@ -493,9 +493,8 @@
                                     <img src="assets/images/footer/cards.png" alt="#">
                                 </div>
                                 <ul class="social">
-                                    <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-github"></i></a></li>
-                                    <li><a href="javascript:void(0)"><i class="lni lni-youtube"></i></a></li>
+                                    <li><a href="https://github.com/jhowbhz"><i class="lni lni-github"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UC-_mG5VU7maEKt5rUj8tSbQ"><i class="lni lni-youtube"></i></a></li>
                                 </ul>
                                 <p class="copyright-text">© Powered by <a href="https://apibrasil.com.br"
                                         target="_blank">APIBrasil</a></p>
