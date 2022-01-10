@@ -106,6 +106,8 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="{{ asset('js/jquery-confirm.min.js') }}"></script>
 
+    <script src="//code-eu1.jivosite.com/widget/2JtT5f9es0" async></script>
+
     @section("scripts")
 
     @show
