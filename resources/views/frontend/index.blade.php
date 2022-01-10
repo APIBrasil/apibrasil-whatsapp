@@ -65,13 +65,21 @@
                                         <a href="#pricing" aria-label="Toggle navigation">Preços</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="https://documenter.getpostman.com/view/11074732/UVXdNJJp" aria-label="Toggle navigation">Documentação</a>
+                                        <a href="#pricing" aria-label="Toggle navigation">Preços</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/painel" target="_blank" aria-label="Toggle navigation">Entrar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/register" target="_blank" aria-label="Toggle navigation">Cadastrar</a>
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            Painel
+                                        </a>
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="/painel">Entrar</a></li>
+                                        </ul>
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="/register">Cadastrar</a></li>
+                                        </ul>
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="https://documenter.getpostman.com/view/11074732/UVXdNJJp" target="_blank">Documentação</a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a href="https://wa.me/5531995360492" target="_blank" aria-label="Toggle navigation">Contato</a>
