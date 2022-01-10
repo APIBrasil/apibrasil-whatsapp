@@ -247,7 +247,7 @@
                                             <li class="text-decoration-line-through">1X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="/register">Começar agora</a>
+                                            <a class="btn" href="https://wa.me/5531995360492">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +276,7 @@
                                             <li>1X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="/register">Começar agora</a>
+                                            <a class="btn" href="https://wa.me/5531995360492">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -305,7 +305,7 @@
                                             <li>2X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="/register">Começar agora</a>
+                                            <a class="btn" href="https://wa.me/5531995360492">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -334,7 +334,7 @@
                                             <li>10X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn bg-primary text-white" href="/register">Começar agora</a>
+                                            <a class="btn bg-primary text-white" href="https://wa.me/5531995360492">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -441,7 +441,7 @@
                         <h3>Somos especializados em fornecer suporte a Servidor Dedicado, Colocation, Servidor Privado Virtual,
                             Hospedagem na Web, Nomes de Domínio e SSL</h3>
                         <div class="button">
-                            <a href="/register" class="btn">Gostei, contratar agora</a>
+                            <a href="https://wa.me/5531995360492" target="_blank" class="btn">Gostei, contratar agora</a>
                         </div>
                     </div>
                 </div>
@@ -463,7 +463,7 @@
                     </div>
                     <div class="col-lg-6 col-md-5 col-12">
                         <div class="button">
-                            <a href="#pricing" class="btn">Contratar agora um plano
+                            <a href="https://wa.me/5531995360492" target="_blank"class="btn">Contratar agora um plano
                             </a>
                         </div>
                     </div>
