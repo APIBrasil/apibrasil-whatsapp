@@ -73,8 +73,6 @@
                                         </a>
                                         <ul class="sub-menu collapse" id="submenu-1-1">
                                             <li class="nav-item"><a href="/painel">Entrar</a></li>
-                                        </ul>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
                                             <li class="nav-item"><a href="/register">Cadastrar</a></li>
                                         </ul>
                                         <ul class="sub-menu collapse" id="submenu-1-1">
