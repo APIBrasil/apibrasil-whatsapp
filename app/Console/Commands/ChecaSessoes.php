@@ -147,7 +147,7 @@ class ChecaSessoes extends Command
 
         try {
 
-            $host = isset($user->server_whatsapp) ? $user->server_whatsapp : false;
+            $host = isset($session->server_whatsapp) ? $session->server_whatsapp : false;
             $client = new Client([ 'base_uri' => $host ]);
 
             $header = [
