@@ -74,8 +74,6 @@
                                         <ul class="sub-menu collapse" id="submenu-1-1">
                                             <li class="nav-item"><a href="/painel">Entrar</a></li>
                                             <li class="nav-item"><a href="/register">Cadastrar</a></li>
-                                        </ul>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
                                             <li class="nav-item"><a href="https://documenter.getpostman.com/view/11074732/UVXdNJJp" target="_blank">Documentação</a></li>
                                         </ul>
                                     </li>
