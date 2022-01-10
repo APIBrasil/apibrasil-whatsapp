@@ -363,7 +363,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="image">
-                        <img src="https://i.imgur.com/Z87ykYF.png" alt="#">
+                        <img src="https://i.imgur.com/CnHWE4J.png" alt="#">
                     </div>
                 </div>
             </div>
