@@ -500,7 +500,7 @@
                                 <h4 class="mt-40 mb-20 text-white" style="font-size: 18px;">Atalhos</h4>
                                 <ul>
                                     <li><a href="/painel">Painel</a></li>
-                                    <li><a href="lgpd" target="_blank">LGPD</a></li>
+                                    <li><a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -514,8 +514,8 @@
                                 </ul>
                                 <h4 class="mt-40 mb-20 text-white" style="font-size: 18px;">Suporte</h4>
                                 <ul>
-                                    <li><a href="javascript:void(0)">Ticket suporte</a></li>
-                                    <li><a href="javascript:void(0)">Status servidores</a></li>
+                                    <li><a href="https://wa.me/5531995360492">Ticket suporte</a></li>
+                                    <li><a href="https://status.apibrasil.com.br/" target="_blank">Status servidores</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
