@@ -62,16 +62,13 @@
                                         <a href="#hero" class="active" aria-label="Toggle navigation">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                            Recursos
-                                        </a>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
-                                            <li class="nav-item"><a href="/painel">Acessar</a></li>
-                                            <li class="nav-item"><a href="https://documenter.getpostman.com/view/11074732/UVXdNJJp">Documentação</a></li>
-                                        </ul>
+                                        <a href="#pricing" aria-label="Toggle navigation">Preços</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#pricing" aria-label="Toggle navigation">Preços</a>
+                                        <a href="https://documenter.getpostman.com/view/11074732/UVXdNJJp" aria-label="Toggle navigation">Documentação</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/painel" target="_blank" aria-label="Toggle navigation">Entrar</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="/register" target="_blank" aria-label="Toggle navigation">Cadastrar</a>
