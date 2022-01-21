@@ -119,7 +119,7 @@
                     <div class="hero-content">
                         <h4 class="wow fadeInUp" data-wow-delay=".2s"><strong class="text-white">#Beta100</strong> Cupom de desconto</h4>
                         <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                            Envio de mensagens ilimitado com o WhatsApp
+                            Envio de mensagens via API ilimitado com o WhatsApp
                         </h1>
                         <p class="wow fadeInUp" data-wow-delay=".6s">Envie mensagens, notificações e integre seus sistemas com o WhatsApp</p>
                         <h5 class="wow fadeInUp" data-wow-delay=".8s">Planos à partir de R$ 49,00 por mês</h5>
@@ -522,8 +522,8 @@
                                     <li><a href="https://github.com/jhowbhz"><i class="lni lni-github"></i></a></li>
                                     <li><a href="https://www.youtube.com/channel/UC-_mG5VU7maEKt5rUj8tSbQ"><i class="lni lni-youtube"></i></a></li>
                                 </ul>
-                                <p class="copyright-text">© Powered by <a href="https://apibrasil.com.br"
-                                        target="_blank">APIBrasil</a></p>
+                                <p class="copyright-text">© Powered by <a href="https://apibrasil.com.br" target="_blank">APIBrasil</a></p>
+                                44.959.669/0001-80
                             </div>
                             <!-- End Single Widget -->
                         </div>
