@@ -1,4 +1,4 @@
-# Painel MyZap Laravle OpenSource
+# Painel OpenSource MyZap - Laravel 
 
 ### Setup project
 Create .env file
