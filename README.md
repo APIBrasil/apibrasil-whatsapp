@@ -19,15 +19,6 @@ cd /opt/painel-whatsapp
 cp .env_example .env
 ```
 
-```bash 
-composer install
-```
-
-```bash 
-sudo systemctl enable nginx
-sudo systemctl enable mariadb.service
-```
-
 ```bash
 nano /etc/php/7.4/fpm/pool.d/www.conf
 ```
@@ -48,18 +39,34 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
+```bash 
+composer install
+```
+
+```bash 
+sudo systemctl enable nginx
+sudo systemctl enable mariadb.service
+```
+
 ### Setup Cron Job
 
 ```bash
 crontab -e
 
-* * * * * cd /opt/apibrasil-whatsapp && php7.4 artisan schedule:run >> /dev/null 2>&1
+* * * * * cd /opt/painel-whatsapp && php7.4 artisan schedule:run >> /dev/null 2>&1
 ```
 
 ### Restart all services
 ```bash
+service mysql restart
 service php7.4-fpm restart
 service php7.4-fpm status
+```
+
+### Populate first user
+```bash
+php artisan migrate
+php artisan db:seed
 ```
 
 ### Permissions
@@ -67,12 +74,6 @@ service php7.4-fpm status
 chmod 777 storage/app
 chmod 777 -R storage/framework
 chmod 777 -R storage/logs
-```
-
-### Populate first user
-```bash
-php artisan migrate
-php artisan db:seed
 ```
 
 ### Nice! run.
