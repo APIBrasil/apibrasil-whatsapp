@@ -1,16 +1,28 @@
 # Painel OpenSource MyZap - Laravel 
+## Painel para gestão de dispositivos conectados na API do MYZAP
 
-### Install composer and dependencies
+### Instalando as dependencias e clonando o projeto
 ```bash
 sudo apt install -y software-properties-common
+```
+
+```bash
 sudo add-apt-repository ppa:ondrej/php
+```
 
+```bash
 sudo apt update
+```
 
+```bash
 apt install -y nginx git software-properties-common unzip zip build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget mariadb-server php7.4 php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-cli php7.4-zip php7.4-bcmath php7.4-tokenizer php7.4-json php-pear php7.4-curl php7.4-intl php7.4-mysqli php7.4-fpm 
+```
 
+```bash
 cd /opt
+```
 
+```bash
 git clone https://github.com/APIBrasil/apibrasil-whatsapp.git painel-whatsapp
 ```
 
@@ -23,8 +35,8 @@ nano /etc/php/7.4/fpm/pool.d/www.conf
 listen = 127.0.0.1:9000
 
 ### Altere as informações do banco de dados
-```bash
 
+```bash
 mariadb -u root -p
 ```
 
@@ -48,15 +60,20 @@ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
+```
 
+```bash
 php composer.phar install
 ```
 
 ```bash
 cp .env_example .env
+```
 
+```bash
 nano .env
 ```
+
 ### Defina as variáveis de ambiente
 
 DB_HOST=DEFINA O HOST BANCO <br/>
@@ -75,7 +92,7 @@ service php7.4-fpm restart
 service php7.4-fpm status
 
 sudo systemctl enable nginx
-sudo systemctl enable mariadb.service
+sudo systemctl enable mysql.service
 ```
 
 ### Instale as crons necessárias
