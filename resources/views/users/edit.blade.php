@@ -84,7 +84,7 @@
                         @endif
                     </div>
 
-                    @if($roles->count() > 1)
+                    @if($roles->count() >= 1)
                     <div class="mb-3  col-3">
                         <label for="role" class="form-label">Plano</label>
                         <select class="form-control" name="role">
