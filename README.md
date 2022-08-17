@@ -2,7 +2,12 @@
 
 ### Install composer and dependencies
 ```bash
+sudo apt install -y software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+
 apt install -y composer nginx git software-properties-common unzip zip build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget mariadb-server php7.4 php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-cli php7.4-zip php7.4-bcmath php7.4-tokenizer php7.4-json php-pear php7.4-curl php7.4-intl php7.4-mysqli php7.4-fpm 
+
 ```
 
 ### Setup project
