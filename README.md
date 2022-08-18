@@ -184,5 +184,4 @@ https://packagist.org/packages/jhowbhz/package-apigratis
 <img src="https://i.imgur.com/UH9OXHs.png" width="300" height="180" /> <img src="https://i.imgur.com/zGzWKjg.png" width="300" height="180" /> <br /> 
 <img src="https://i.imgur.com/1KYVNUD.png" width="300" height="180" /> <img src="https://i.imgur.com/URkVaSR.png" width="300" height="180" /> <br />
 <img src="https://i.imgur.com/fbT60UQ.png" width="300" height="180" /> <img src="https://i.imgur.com/hZmjQkq.png" width="300" height="180" /> <br />
-<img src="https://i.imgur.com/iBq8atI.png" width="300" height="180" /> 
 
