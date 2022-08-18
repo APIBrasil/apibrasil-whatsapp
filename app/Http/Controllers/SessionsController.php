@@ -183,7 +183,7 @@ class SessionsController extends Controller
 
             $host = json_decode($this->requestIntegracao($request, $session, [
                 'session' => $session->session_name ?? '',
-            ], 'getHostDevice'), true, JSON_UNESCAPED_UNICODE);
+            ], 'getWid'), true, JSON_UNESCAPED_UNICODE);
 
             $ip = self::getIp() !== null ? self::getIp() : null;
             $location = json_encode(geoip($ip));
@@ -192,17 +192,7 @@ class SessionsController extends Controller
                 'location' => $location ?? '',
                 'ip_host' => self::getIp() ?? '',
                 'last_connected' => Carbon::now(),
-                'connected' => $host['connected'] ?? '',
-                'locales' => $host['locales'] ?? '',
-                'number' => $host['number'] ?? '',
-                'device_manufacturer' => $host['phone']['device_manufacturer'] ?? '',
-                'device_model' => $host['phone']['device_model'] ?? '',
-                'mcc' => $host['phone']['mcc'] ?? '',
-                'mnc' => $host['phone']['mnc'] ?? '',
-                'os_build_number' => $host['phone']['os_build_number'] ?? '',
-                'os_version' => $host['phone']['os_version'] ?? '',
-                'wa_version' => $host['phone']['wa_version'] ?? '',
-                'pushname' => $host['pushname'] ?? '',
+                'connected' => $host['status'] ?? '',
                 'result' => $host['result'] ?? ''
             ]);
 
