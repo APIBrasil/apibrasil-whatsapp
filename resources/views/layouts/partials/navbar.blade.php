@@ -24,7 +24,7 @@
                         <span class="badge bg-primary"> <i class="fas fa-check"></i> {{ $role->name }}</span>
                     </a>
                     @empty
-                    <a class="nav-link" href="https://wa.me/55319994359434">
+                    <a class="nav-link" href="https://wa.me/5531994359434">
                         <span class="badge bg-danger"> <i class="fas fa-info-circle"></i> SEM PLANO CONTRATADO </span>
                     @endforelse
                     </a>

@@ -100,7 +100,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="https://wa.me/55319994359434" target="_blank" aria-label="Toggle navigation">Contato</a>
+                                        <a href="https://wa.me/5531994359434" target="_blank" aria-label="Toggle navigation">Contato</a>
                                     </li>
                                 </ul>
                             </div>
@@ -273,7 +273,7 @@
                                             <li class="text-decoration-line-through">1X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="https://wa.me/55319994359434">Começar agora</a>
+                                            <a class="btn" href="https://wa.me/5531994359434">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +302,7 @@
                                             <li>1X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="https://wa.me/55319994359434">Começar agora</a>
+                                            <a class="btn" href="https://wa.me/5531994359434">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -331,7 +331,7 @@
                                             <li>2X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn" href="https://wa.me/55319994359434">Começar agora</a>
+                                            <a class="btn" href="https://wa.me/5531994359434">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -360,7 +360,7 @@
                                             <li>10X Alocação de recursos</li>
                                         </ul>
                                         <div class="button">
-                                            <a class="btn bg-primary text-white" href="https://wa.me/55319994359434">Começar agora</a>
+                                            <a class="btn bg-primary text-white" href="https://wa.me/5531994359434">Começar agora</a>
                                         </div>
                                     </div>
                                 </div>
@@ -383,7 +383,7 @@
                         </h2>
                         <p>Nosso serviço de <strong>CRON Inteligente </strong> verifica o status das suas sessões e a saúde dos seus dispositivos conectados.</p>
                         <div class="button">
-                            <a href="https://wa.me/55319994359434" target="_blank" class="btn">Contratar agora</a>
+                            <a href="https://wa.me/5531994359434" target="_blank" class="btn">Contratar agora</a>
                         </div>
                     </div>
                 </div>
@@ -467,7 +467,7 @@
                         <h3>Somos especializados em fornecer suporte a Servidor Dedicado, Colocation, Servidor Privado Virtual,
                             Hospedagem na Web, Nomes de Domínio e SSL</h3>
                         <div class="button">
-                            <a href="https://wa.me/55319994359434" target="_blank" class="btn">Gostei, contratar agora</a>
+                            <a href="https://wa.me/5531994359434" target="_blank" class="btn">Gostei, contratar agora</a>
                         </div>
                     </div>
                 </div>
@@ -489,7 +489,7 @@
                     </div>
                     <div class="col-lg-6 col-md-5 col-12">
                         <div class="button">
-                            <a href="https://wa.me/55319994359434" target="_blank"class="btn">Contratar agora um plano
+                            <a href="https://wa.me/5531994359434" target="_blank"class="btn">Contratar agora um plano
                             </a>
                         </div>
                     </div>
@@ -514,7 +514,7 @@
                                 </div>
                                 <p>Desenvolvido com MyZAP 2.0, a API do WhatsApp mais barata e simples do Brasil.
                                 </p>
-                                <a class="call" href="https://wa.me/55319994359434"><i class="lni lni-phone-set"></i> +55 (31) 99536 0492</a>
+                                <a class="call" href="https://wa.me/5531994359434"><i class="lni lni-phone-set"></i> +55 (31) 99536 0492</a>
                                 <div class="payments">
                                     <img src="assets/images/footer/cards.png" alt="#">
                                 </div>
@@ -533,7 +533,7 @@
                                 <h3>Páginas</h3>
                                 <ul>
                                     <li><a href="#pricing">Preços <span style="margin-left: 4px;" class="badge bg-success rounded text-white">Promo</span></a></li>
-                                    <li><a href="https://wa.me/55319994359434" target="_blank">Ajuda</a></li>
+                                    <li><a href="https://wa.me/5531994359434" target="_blank">Ajuda</a></li>
                                 </ul>
                                 <h4 class="mt-40 mb-20 text-white" style="font-size: 18px;">Atalhos</h4>
                                 <ul>
@@ -552,7 +552,7 @@
                                 </ul>
                                 <h4 class="mt-40 mb-20 text-white" style="font-size: 18px;">Suporte</h4>
                                 <ul>
-                                    <li><a href="https://wa.me/55319994359434">Ticket suporte</a></li>
+                                    <li><a href="https://wa.me/5531994359434">Ticket suporte</a></li>
                                     <li><a href="https://status.apibrasil.com.br/" target="_blank">Status servidores</a></li>
                                 </ul>
                             </div>

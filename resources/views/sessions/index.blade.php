@@ -366,7 +366,7 @@
                             icon: 'error',
                             title: `${sessao?.state}`,
                             text: `${sessao?.message}`,
-                            footer: '<a href="https://wa.me/55319994359434" target="_blank">Precisa de ajuda?</a>'
+                            footer: '<a href="https://wa.me/5531994359434" target="_blank">Precisa de ajuda?</a>'
                         }).then((result) => {
                             window.location.reload();
                         })
@@ -467,7 +467,7 @@
                     icon: 'error',
                     title: `${error?.responseJSON?.reason ?? 'Erro desconhecido ao iniciar!'}`,
                     text: `${error?.responseJSON?.message ?? 'Verifique o token da sua API e dados da sessão.'}`,
-                    footer: '<a href="https://wa.me/55319994359434" target="_blank">Precisa de ajuda?</a>'
+                    footer: '<a href="https://wa.me/5531994359434" target="_blank">Precisa de ajuda?</a>'
                 }).then((value) => {
                     window.location.reload();
                 })
