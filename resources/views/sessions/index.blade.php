@@ -506,7 +506,7 @@
                 $(".modal-title").html(`Visualizar grupo`);
                 $('#modalShowSession').modal('show');
 
-                $("input[name='server_whatsapp']").val(`https://${ window.location.href.split('/')[2] }/api/myzap`);
+                $("input[name='server_whatsapp']").val(`${data?.session?.server_whatsapp}`);
                 $("input[name='apitoken']").val(`${data?.session?.apitoken ?? 'Indispoível'}`);
                 $("input[name='session_key']").val(`${data?.session?.session_key ?? 'Indispoível'}`);
                 $("input[name='session_name']").val(`${data?.session?.session_name ?? 'Indispoível'}`);
@@ -523,9 +523,7 @@
                 $("input[name='wa_version']").val(`${data?.host?.phone?.wa_version ?? 'Indispoível'}`);
                 $("input[name='pushname']").val(`${data?.host?.pushname ?? 'Indispoível'}`);
 
-                if(data?.host?.phone?.device_manufacturer){
-                    $("#imgModelo").attr('src', `${ data?.host?.phone?.device_manufacturer == 'Apple' ? 'http://simpleicon.com/wp-content/uploads/apple.png' : `https://cdn-icons-png.flaticon.com/512/174/174836.png` }`);
-                }
+                $("#imgModelo").attr('src', `${ data?.session?.status == 'CONNECTED' ? 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png' : `https://cdn-icons-png.flaticon.com/512/174/174836.png` }`);
                 $.LoadingOverlay('hide');
 
             },
