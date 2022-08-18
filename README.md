@@ -1,6 +1,12 @@
 # 🧪 Painel OpenSource MyZap - Laravel 
 Painel para gestão de dispositivos conectados na API do MYZAP, o software é de uso aberto e você pode alterar da forma que desejar, caso queira testar o painel sem instalar, basta entrar no link abaixo.
 
+<p align="center">
+<a href="https://github.com/APIBrasil/apibrasil-whatsapp/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://chat.whatsapp.com/KsxrUGIPWvUBYAjI1ogaGs"><img src="https://img.shields.io/badge/WhatsApp-Grupo%20do%20WhatsApp-green" alt="Build Status"></a>
+
+</p>
+
 https://demo.plugadohost.com.br/
 
 ### Compre um servidor para utilizar o painel
