@@ -128,7 +128,7 @@
 <script>
     $(function() {
 
-        $("#session_key").mask("+00000000000000");
+        $("#session_key").mask("00000000000000");
 
     });
 </script>
