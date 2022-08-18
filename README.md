@@ -7,7 +7,15 @@ https://demo.plugadohost.com.br/
 
 https://apibrasil.com.br/
 
+### Servidor recomendado
+```
+4 GB 
+4 vCPU
+10GB HD
+```
+
 ### Instalando as dependencias e clonando o projeto
+
 ```bash
 sudo apt install -y software-properties-common
 ```
@@ -92,7 +100,7 @@ crontab -e
 * * * * * cd /opt/painel-whatsapp && php7.4 artisan schedule:run >> /dev/null 2>&1
 ```
 
-### Populate first user
+### Criar e Popular o banco de dados
 ```bash
 php artisan migrate
 php artisan db:seed
