@@ -167,6 +167,8 @@ acesso@whatsapp.com<br />
 ![alt text](https://i.imgur.com/FgP8CRZ.png "Home")
 ![alt_text](https://i.imgur.com/zGzWKjg.png "Painel")
 ![alt_text](https://i.imgur.com/1KYVNUD.png "Criar sessões")
+![alt_text](https://i.imgur.com/URkVaSR.png "Conectando um dispositivo")
+![alt_text](https://i.imgur.com/fbT60UQ.png "Dispositivo conectado")
 ![alt_text](https://i.imgur.com/iBq8atI.png "Gestão de sessões")
 
 
