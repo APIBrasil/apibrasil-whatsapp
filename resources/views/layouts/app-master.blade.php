@@ -82,7 +82,7 @@
     <script src="{!! url('assets/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>
 
     <script src="//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
-    <script src="//app.agibens.com/assets/js/loadingoverlay.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.min.js"></script>
 
