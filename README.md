@@ -166,12 +166,8 @@ acesso@whatsapp.com<br />
 1234
 
 ### Prints
-![alt text](https://i.imgur.com/FgP8CRZ.png "Home")
-![alt_text](https://i.imgur.com/zGzWKjg.png "Painel")
-![alt_text](https://i.imgur.com/1KYVNUD.png "Criar sessões")
-![alt_text](https://i.imgur.com/URkVaSR.png "Conectando um dispositivo")
-![alt_text](https://i.imgur.com/fbT60UQ.png "Dispositivo conectado")
-![alt_text](https://i.imgur.com/rGtk4yq.png "Informações do dispositivo")
-![alt_text](https://i.imgur.com/iBq8atI.png "Gestão de sessões")
-
+<img src="https://i.imgur.com/UH9OXHs.png" width="500" height="280" /> <img src="https://i.imgur.com/zGzWKjg.png" width="500" height="280" /> <br /> 
+<img src="https://i.imgur.com/1KYVNUD.png" width="500" height="280" /> <img src="https://i.imgur.com/URkVaSR.png" width="500" height="280" /> <br />
+<img src="https://i.imgur.com/fbT60UQ.png" width="500" height="280" /> <img src="https://i.imgur.com/rGtk4yq.png" width="500" height="280" /> <br />
+<img src="https://i.imgur.com/iBq8atI.png" width="500" height="280" /> 
 
