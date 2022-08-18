@@ -166,8 +166,9 @@ acesso@whatsapp.com<br />
 1234
 
 ### Prints
+
 <img src="https://i.imgur.com/UH9OXHs.png" width="500" height="280" /> <img src="https://i.imgur.com/zGzWKjg.png" width="500" height="280" /> <br /> 
 <img src="https://i.imgur.com/1KYVNUD.png" width="500" height="280" /> <img src="https://i.imgur.com/URkVaSR.png" width="500" height="280" /> <br />
-<img src="https://i.imgur.com/fbT60UQ.png" width="500" height="280" /> <img src="https://i.imgur.com/rGtk4yq.png" width="500" height="280" /> <br />
+<img src="https://i.imgur.com/fbT60UQ.png" width="500" height="280" /> <img src="https://i.imgur.com/hZmjQkq.png" width="500" height="280" /> <br />
 <img src="https://i.imgur.com/iBq8atI.png" width="500" height="280" /> 
 
