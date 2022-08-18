@@ -1,5 +1,5 @@
 # Painel OpenSource MyZap - Laravel 
-## Painel para gestão de dispositivos conectados na API do MYZAP
+Painel para gestão de dispositivos conectados na API do MYZAP, o software é de uso aberto e você pode alterar da forma que desejar.
 
 ### Instalando as dependencias e clonando o projeto
 ```bash
