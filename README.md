@@ -105,22 +105,19 @@ php artisan migrate
 php artisan db:seed
 ```
 
-### Permissions
+### Permissões necessárias
 ```bash
 chmod 777 storage/app
 chmod 777 -R storage/framework
 chmod 777 -R storage/logs
 ```
 
-### Rodar local para testes
-```
-php artisan serve --host=127.0.0.1 --port=8000
-```
-
 ### Execute os jobs
 ```bash
 php artisan queue:work &
+```
 
+```bash
 jobs -l
 ```
 
@@ -135,7 +132,7 @@ server {
     root /opt/painel-whatsapp/public;
     index index.php index.html index.htm;
 
-    server_name DOMINIO;
+    server_name SEU_DOMINIO.COM;
 
     location / {
         try_files $uri $uri/ /index.php?$query_string;
@@ -166,13 +163,13 @@ certbot --nginx
 ### Tudo certo.
 Usuário padrão de acesso a plataforma
 
-acesso@whatsapp.com<br />
+acesso@whatsapp.com <br />
 1234
 
 ### Prints
 
-<img src="https://i.imgur.com/UH9OXHs.png" width="500" height="280" /> <img src="https://i.imgur.com/zGzWKjg.png" width="500" height="280" /> <br /> 
-<img src="https://i.imgur.com/1KYVNUD.png" width="500" height="280" /> <img src="https://i.imgur.com/URkVaSR.png" width="500" height="280" /> <br />
-<img src="https://i.imgur.com/fbT60UQ.png" width="500" height="280" /> <img src="https://i.imgur.com/hZmjQkq.png" width="500" height="280" /> <br />
-<img src="https://i.imgur.com/iBq8atI.png" width="500" height="280" /> 
+<img src="https://i.imgur.com/UH9OXHs.png" width="300" height="180" /> <img src="https://i.imgur.com/zGzWKjg.png" width="300" height="180" /> <br /> 
+<img src="https://i.imgur.com/1KYVNUD.png" width="300" height="180" /> <img src="https://i.imgur.com/URkVaSR.png" width="300" height="180" /> <br />
+<img src="https://i.imgur.com/fbT60UQ.png" width="300" height="180" /> <img src="https://i.imgur.com/hZmjQkq.png" width="300" height="180" /> <br />
+<img src="https://i.imgur.com/iBq8atI.png" width="300" height="180" /> 
 
