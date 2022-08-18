@@ -159,6 +159,10 @@ Usuário padrão de acesso a plataforma
 acesso@whatsapp.com <br />
 1234
 
+### Esse software consumiu a SDK em PHP para o MYZAP
+
+https://packagist.org/packages/jhowbhz/package-apigratis
+
 ### Prints
 
 <img src="https://i.imgur.com/UH9OXHs.png" width="300" height="180" /> <img src="https://i.imgur.com/zGzWKjg.png" width="300" height="180" /> <br /> 
