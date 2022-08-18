@@ -21,11 +21,7 @@ sudo apt update && apt install -y nginx git software-properties-common unzip zip
 ```
 
 ```bash
-cd /opt
-```
-
-```bash
-git clone https://github.com/APIBrasil/apibrasil-whatsapp.git painel-whatsapp
+cd /opt && git clone https://github.com/APIBrasil/apibrasil-whatsapp.git painel-whatsapp
 ```
 
 ### Altere as configurações do php
@@ -75,6 +71,7 @@ cp .env_example .env
 ```bash
 nano .env
 ```
+
 ### Reinicie tudo e coloque para iniciar automaticamente
 
 ```bash 
