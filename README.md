@@ -7,6 +7,8 @@ Painel para gestão de dispositivos conectados na API do MYZAP, o software é de
 
 </p>
 
+### Para testar sem precisar instalar
+
 https://demo.plugadohost.com.br/
 
 ### Compre um servidor para utilizar o painel
