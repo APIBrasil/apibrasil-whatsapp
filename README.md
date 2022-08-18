@@ -3,6 +3,10 @@ Painel para gestão de dispositivos conectados na API do MYZAP, o software é de
 
 https://demo.plugadohost.com.br/
 
+### Compre um servidor para utilizar o painel
+
+https://apibrasil.com.br/
+
 ### Instalando as dependencias e clonando o projeto
 ```bash
 sudo apt install -y software-properties-common
