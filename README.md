@@ -15,7 +15,7 @@ sudo apt update
 ```
 
 ```bash
-apt install -y nginx git software-properties-common unzip zip build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget mariadb-server php7.4 php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-cli php7.4-zip php7.4-bcmath php7.4-tokenizer php7.4-json php-pear php7.4-curl php7.4-intl php7.4-mysqli php7.4-fpm 
+apt install -y nginx git software-properties-common unzip zip build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget mariadb-server php7.4 php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-cli php7.4-zip php7.4-bcmath php7.4-tokenizer php7.4-json php-pear php7.4-curl php7.4-intl php7.4-mysqli php7.4-fpm python3-certbot-nginx
 ```
 
 ```bash
@@ -73,16 +73,6 @@ cp .env_example .env
 ```bash
 nano .env
 ```
-
-### Defina as variáveis de ambiente
-
-DB_HOST=DEFINA O HOST BANCO <br/>
-DB_PORT=3306<br/>
-DB_DATABASE=DEFINA O BANCO<br/>
-DB_USERNAME=DEFINA O USUARIO DO BANCO<br/>
-DB_PASSWORD=DEFINA A SENHA DO BANCO<br/>
-QUEUE_DRIVER=database
-
 ### Reinicie tudo e coloque para iniciar automaticamente
 
 ```bash 
@@ -116,25 +106,23 @@ chmod 777 -R storage/framework
 chmod 777 -R storage/logs
 ```
 
-### Nice! run.
-```php artisan serve --host=127.0.0.1 --port=8000```
-
-### Lauch!
-
-http://127.0.0.1:8000
-
-### Default user and password
-
+### Rodar local para testes
 ```
-E-mail: jhowjhoe@gmail.com
-Senha: 221568
+php artisan serve --host=127.0.0.1 --port=8000
 ```
-### Run Job
+
+### Execute os jobs
 ```bash
-php artisan queue:work
+php artisan queue:work &
+
+jobs -l
 ```
 
 ### Server Block Nginx
+```bash
+nano /etc/nginx/sites-available/painel
+```
+
 ```
 server {
 
@@ -161,7 +149,9 @@ server {
 }
 ```
 
-```ln -s /etc/nginx/sites-available/painel /etc/nginx/sites-enabled/painel```
+```bash
+ln -s /etc/nginx/sites-available/painel /etc/nginx/sites-enabled/painel
+```
 
 ```bash
 certbot --nginx
