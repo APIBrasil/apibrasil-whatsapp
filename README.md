@@ -157,6 +157,12 @@ ln -s /etc/nginx/sites-available/painel /etc/nginx/sites-enabled/painel
 certbot --nginx
 ```
 
+### Tudo certo.
+Usuário padrão de acesso a plataforma
+
+acesso@whatsapp.com
+1234
+
 ### Prints
 ![alt text](https://i.imgur.com/FgP8CRZ.png "Home")
 ![alt_text](https://i.imgur.com/zGzWKjg.png "Painel")
