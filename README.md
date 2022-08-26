@@ -173,7 +173,7 @@ certbot --nginx
 Usuário padrão de acesso a plataforma
 
 acesso@whatsapp.com <br />
-12345678
+1234
 
 ### Esse software consumiu a SDK em PHP para o MYZAP
 
