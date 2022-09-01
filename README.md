@@ -11,6 +11,9 @@ Painel para gestão de dispositivos conectados na API do MYZAP, o software é de
 
 https://demo.plugadohost.com.br/
 
+### Servidor VPS gratuito
+https://www.oracle.com/br/cloud/free/
+
 ### Compre um servidor para utilizar o painel
 
 https://apibrasil.com.br/
@@ -20,6 +23,17 @@ https://apibrasil.com.br/
 4 GB 
 4 vCPU
 10GB HD
+```
+
+### Liberando regras de firewall
+```
+iptables -F
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+iptables -A INPUT -p tcp -j DROP
 ```
 
 ### Instalando as dependencias e clonando o projeto
