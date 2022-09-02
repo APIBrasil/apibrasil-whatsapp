@@ -23,9 +23,9 @@ Afinal de contas o que esse painel faz? Ele foi desenvolvido para fazer a gestã
 
 ### Servidor recomendado
 ```
-4 GB 
-4 vCPU
-10GB HD
+Ubuntu 20.04 Superior
+1 GB / 1 vCPU
+6GB HD
 ```
 
 ### Liberando regras de firewall
