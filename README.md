@@ -7,18 +7,19 @@ Afinal de contas o que esse painel faz? Ele foi desenvolvido para fazer a gestã
 <a href="https://github.com/APIBrasil/apibrasil-whatsapp/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://chat.whatsapp.com/KsxrUGIPWvUBYAjI1ogaGs"><img src="https://img.shields.io/badge/WhatsApp-Grupo%20do%20WhatsApp-green" alt="Build Status"></a>
 
+### Como instalar o painel (vídeo)
+[![Veja como instalar o painel](https://i9.ytimg.com/vi/zFs6JmZoF6g/mqdefault.jpg?v=63104fe3&sqp=CNipxpgG&rs=AOn4CLB_GhJmVLkW12EGfT2DRgg-SuqeiA)](https://www.youtube.com/watch?v=zFs6JmZoF6g)
+
 </p>
 
 ### Para testar sem precisar instalar
-
-https://demo.plugadohost.com.br/
+```https://demo.plugadohost.com.br/```
 
 ### Servidor VPS gratuito
-https://www.oracle.com/br/cloud/free/
+```https://www.oracle.com/br/cloud/free/```
 
 ### Compre um servidor para utilizar o painel
-
-https://apibrasil.com.br/
+```https://apibrasil.com.br/```
 
 ### Servidor recomendado
 ```
