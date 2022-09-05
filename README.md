@@ -3,6 +3,8 @@ Painel para gestão de dispositivos conectados na API do MYZAP, o software é de
 
 Afinal de contas o que esse painel faz? Ele foi desenvolvido para fazer a gestão dos seus dispositivos conectados a sua API do WhatsApp (MyZap) facilitando assim sua integração com demais ferramentas.
 
+[![Stargazers repo roster for @APIBrasil/apibrasil-whatsapp](https://reporoster.com/stars/APIBrasil/apibrasil-whatsapp)](https://github.com/APIBrasil/apibrasil-whatsapp/stargazers)
+
 <p align="center">
 <a href="https://github.com/APIBrasil/apibrasil-whatsapp/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://chat.whatsapp.com/KsxrUGIPWvUBYAjI1ogaGs"><img src="https://img.shields.io/badge/WhatsApp-Grupo%20do%20WhatsApp-green" alt="Build Status"></a>
