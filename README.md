@@ -14,9 +14,6 @@ Afinal de contas o que esse painel faz? Ele foi desenvolvido para fazer a gestã
 
 </p>
 
-### Para testar sem precisar instalar
-```https://demo.plugadohost.com.br/```
-
 ### Servidor VPS gratuito
 ```https://www.oracle.com/br/cloud/free/```
 
